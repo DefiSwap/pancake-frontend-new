@@ -426,8 +426,8 @@ const CakeSection: React.FC = () => {
         </Text>
       </Flex>
       <Flex justifyContent="center" style={{ gap: 14 }}>
-        <Link href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56">
-          <Button variant="primary">{t('Buy CAKE')}</Button>
+        <Link href="https://pancakeswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56">
+          <Button variant="primary">{t('Buy Pattie')}</Button>
         </Link>
         <Link href="https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics">
           <Button pl="0" endIcon={<OpenNewIcon color="primary" />} variant="text">

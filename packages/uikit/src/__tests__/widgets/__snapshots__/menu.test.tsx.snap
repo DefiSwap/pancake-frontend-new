@@ -1154,7 +1154,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c26"
-              href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="https://pancakeswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
               target="_blank"
             >
               <svg
@@ -3154,7 +3154,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c49"
-              href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+              href="https://pancakeswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
               target="_blank"
             >
               <svg
@@ -3218,12 +3218,12 @@ exports[`renders correctly 1`] = `
           <a
             class="c52"
             data-theme="dark"
-            href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56"
+            href="https://pancakeswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
             scale="sm"
             target="_blank"
             variant="primary"
           >
-            Buy CAKE
+            Buy Pattie
             <svg
               class="c53"
               color="backgroundAlt"

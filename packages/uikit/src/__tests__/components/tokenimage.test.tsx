@@ -6,7 +6,7 @@ it("renders correctly", () => {
   setupMockIntersectionObserver();
   const { asFragment } = renderWithProvider(
     <TokenImage
-      src="https://pancakeswap.finance/images/tokens/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82.svg"
+      src="https://pancakeswap.finance/images/tokens/0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D.svg"
       height={48}
       width={48}
     />

@@ -13,10 +13,7 @@ export const InfoPageLayout = ({ children }) => {
   const isStableSwap = router.query.type === 'stableSwap'
   const subMenuItems = useMemo(
     () => [
-      {
-        label: t('V3'),
-        href: `/info/v3${chainPath}`,
-      },
+      
       {
         label: t('V2'),
         href: `/info${chainPath}`,

@@ -87,7 +87,7 @@ const PoolAllocations = () => {
           <Text textAlign="right" bold mb="12px">
             73.6%
           </Text>
-          <AllocationMatch color="#A881FC" text={t('Rewards')} />
+          <AllocationMatch color="#FF720D" text={t('Rewards')} />
           <Text textAlign="right" bold mb="12px">
             20%
           </Text>

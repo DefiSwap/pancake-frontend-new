@@ -56,7 +56,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5, minimum-scale=1, viewport-fit=cover"
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="#FF720D" />
       </Head>
       <DefaultSeo {...SEO} />
       <NextThemeProvider>

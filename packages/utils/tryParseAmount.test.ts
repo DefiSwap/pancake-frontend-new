@@ -16,7 +16,7 @@ describe('utils/tryParseAmount', () => {
         '100',
         new Token(
           56,
-          '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
+          '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
           18,
           'CAKE',
           'PancakeSwap Token',

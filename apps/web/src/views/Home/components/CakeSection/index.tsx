@@ -408,7 +408,7 @@ const CakeSection: React.FC = () => {
           fontSize={['32px', null, null, '40px']}
           lineHeight="110%"
         >
-          {t('CAKE')}
+          {t('PATTIE')}
         </Text>
       </Text>
       <Flex justifyContent="center">
@@ -429,11 +429,7 @@ const CakeSection: React.FC = () => {
         <Link href="https://pancakeswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56">
           <Button variant="primary">{t('Buy Pattie')}</Button>
         </Link>
-        <Link href="https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics">
-          <Button pl="0" endIcon={<OpenNewIcon color="primary" />} variant="text">
-            {t('Learn')}
-          </Button>
-        </Link>
+        
       </Flex>
       <CakeSectionMainBox>
         <CakeLeftLine ref={leftLineRef} className={played?.current ? 'show' : ''} />

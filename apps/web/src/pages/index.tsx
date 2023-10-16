@@ -34,7 +34,7 @@ const tvl = 6082955532.115718
 export const getStaticProps: GetStaticProps = async () => {
   const totalTxQuery = gql`
     query TotalTransactions($block: Block_height) {
-      pancakeFactory(block: $block) {
+      pattieswapFactory(block: $block) {
         totalTransactions
       }
     }
@@ -63,12 +63,12 @@ export const getStaticProps: GetStaticProps = async () => {
     })
 
     if (
-      totalTx?.pancakeFactory?.totalTransactions &&
-      totalTx30DaysAgo?.pancakeFactory?.totalTransactions &&
-      parseInt(totalTx.pancakeFactory.totalTransactions) > parseInt(totalTx30DaysAgo.pancakeFactory.totalTransactions)
+      totalTx?.pattieswapFactory?.totalTransactions &&
+      totalTx30DaysAgo?.pattieswapFactory?.totalTransactions &&
+      parseInt(totalTx.pattieswapFactory.totalTransactions) > parseInt(totalTx30DaysAgo.pattieswapFactory.totalTransactions)
     ) {
       results.totalTx30Days =
-        parseInt(totalTx.pancakeFactory.totalTransactions) - parseInt(totalTx30DaysAgo.pancakeFactory.totalTransactions)
+        parseInt(totalTx.pattieswapFactory.totalTransactions) - parseInt(totalTx30DaysAgo.pattieswapFactory.totalTransactions)
     }
   } catch (error) {
     if (process.env.NODE_ENV === 'production') {
@@ -105,13 +105,13 @@ export const getStaticProps: GetStaticProps = async () => {
   try {
     const result = await infoServerClient.request<any>(gql`
       query tvl {
-        pancakeFactories(first: 1) {
+        pattieswapFactories(first: 1) {
           totalLiquidityUSD
         }
       }
     `)
     const cake = await (await fetch('https://farms-api.pancakeswap.com/price/cake')).json()
-    const { totalLiquidityUSD } = result.pancakeFactories[0]
+    const { totalLiquidityUSD } = result.pattieswapFactories[0]
     const cakeVaultV2 = getCakeVaultAddress()
     const cakeContract = getCakeContract()
     const totalCakeInVault = await cakeContract.read.balanceOf([cakeVaultV2])

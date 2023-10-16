@@ -19,7 +19,7 @@ export const MOONPAY_BASE_URL = 'https://api.moonpay.com'
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-export const INFO_CLIENT = 'https://proxy-worker-api.pancakeswap.com/bsc-exchange'
+export const INFO_CLIENT = 'https://api.thegraph.com/subgraphs/name/lyu-jinhang/pattieswap'
 export const V3_BSC_INFO_CLIENT = `https://open-platform.nodereal.io/${
   process.env.NEXT_PUBLIC_NODE_REAL_API_INFO || process.env.NEXT_PUBLIC_NODE_REAL_API_ETH
 }/pancakeswap-v3/graphql`

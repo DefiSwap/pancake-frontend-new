@@ -1,6 +1,6 @@
 import { ChainId } from '@pancakeswap/chains'
 
-export const PANCAKE_EXTENDED = 'https://datrare.com/json/token-extended.json'
+export const PANCAKE_EXTENDED = 'https://tokens.pancakeswap.finance/pancakeswap-extended.json'
 
 const COINGECKO = 'https://tokens.pancakeswap.finance/coingecko.json'
 const PANCAKE_ETH_DEFAULT = 'https://tokens.pancakeswap.finance/pancakeswap-eth-default.json'

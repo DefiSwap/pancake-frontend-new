@@ -110,7 +110,7 @@ const PlaceBidModal: React.FC<React.PropsWithChildren<PlaceBidModalProps>> = ({
     useApproveConfirmTransaction({
       minAmount,
       spender: farmAuctionContract?.address,
-      token: CAKE[ChainId.BSC],
+      token: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
       onApproveSuccess: async ({ receipt }) => {
         toastSuccess(
           t('Contract approved - you can now place your bid!'),

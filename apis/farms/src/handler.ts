@@ -64,8 +64,8 @@ const pairAbi = [
 
 const cakeBusdPairMap = {
   [ChainId.BSC]: {
-    address: Pair.getAddress(CAKE[ChainId.BSC], BUSD[ChainId.BSC]),
-    tokenA: CAKE[ChainId.BSC],
+    address: Pair.getAddress('0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D', BUSD[ChainId.BSC]),
+    tokenA: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
     tokenB: BUSD[ChainId.BSC],
   },
   [ChainId.BSC_TESTNET]: {

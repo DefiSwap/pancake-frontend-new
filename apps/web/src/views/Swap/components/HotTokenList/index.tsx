@@ -30,7 +30,7 @@ const StyledFlex = styled(Flex)`
 const StyledTabToggle = styled(TabToggle)`
   cursor: pointer;
   background-color: ${({ theme, isActive }) =>
-    isActive ? (theme.isDark ? 'rgb(45,48,72)' : '#ffffff') : 'transparent'};
+    isActive ? (theme.isDark ? 'rgb(45,48,72)' : '#FF720D') : 'transparent'};
   ${({ theme }) => theme.mediaQueries.sm} {
     background-color: ${({ theme, isActive }) =>
       isActive ? (theme.isDark ? 'rgb(45,48,72)' : '#f4fdff') : 'transparent'};

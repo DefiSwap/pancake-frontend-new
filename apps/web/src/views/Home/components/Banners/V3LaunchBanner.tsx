@@ -193,7 +193,7 @@ const Title = styled.div`
   font-weight: 600;
   font-size: 14px;
   line-height: 110%;
-  color: #ffffff;
+  color: #FF720D;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   margin-top: 0px;
   padding-right: 80px;

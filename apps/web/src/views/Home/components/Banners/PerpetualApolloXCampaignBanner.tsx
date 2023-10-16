@@ -73,7 +73,7 @@ const Header = styled.div`
   ${({ theme }) => theme.mediaQueries.md} {
     font-size: 40px;
     color: #7645d9;
-    background: #ffffff;
+    background: #FF720D;
     font-family: 'Kanit';
     -webkit-background-clip: text;
     font-weight: 800;

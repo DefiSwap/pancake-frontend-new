@@ -9,7 +9,7 @@ it("renders correctly", () => {
       .c0 {
       align-items: center;
       border-radius: 16px;
-      color: #ffffff;
+      color: #FF720D;
       display: inline-flex;
       font-weight: 400;
       white-space: nowrap;

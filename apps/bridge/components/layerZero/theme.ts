@@ -90,7 +90,7 @@ export const PancakeSwapTheme = {
       mode: 'light',
       primary: {
         main: '#1EC7D3',
-        contrastText: '#FFFFFF',
+        contrastText: '#FF720D',
         light: '#1EC7D3',
       },
       secondary: {
@@ -108,8 +108,8 @@ export const PancakeSwapTheme = {
       },
       divider: '#E7E3EB',
       background: {
-        paper: '#FFFFFF',
-        default: '#FFFFFF',
+        paper: '#FF720D',
+        default: '#FF720D',
       },
     },
   },

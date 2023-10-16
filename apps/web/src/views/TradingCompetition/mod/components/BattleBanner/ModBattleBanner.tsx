@@ -142,7 +142,7 @@ const StyledHeading1Text = styled.div`
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-feature-settings: 'liga' off;
-  color: #ffffff;
+  color: #FF720D;
   text-shadow: 0px 5px 0px #13101d;
 `
 

@@ -231,14 +231,14 @@ const Hero = () => {
           ) : (
             <PrizeTotalBalance fontSize="64px" bold prefix="$" value={prizeTotal} mb="8px" decimals={0} />
           )}
-          <Heading mb="32px" scale="lg" color="#ffffff">
+          <Heading mb="32px" scale="lg" color="#FF720D">
             {t('in prizes!')}
           </Heading>
         </>
       )
     }
     return (
-      <Heading mb="24px" scale="xl" color="#ffffff">
+      <Heading mb="24px" scale="xl" color="#FF720D">
         {t('Tickets on sale soon')}
       </Heading>
     )
@@ -254,7 +254,7 @@ const Hero = () => {
         <img src="/images/lottery/ticket-l.png" width="123px" height="83px" alt="" />
         <img src="/images/lottery/ticket-r.png" width="121px" height="72px" alt="" />
       </StarsDecorations>
-      <Heading style={{ zIndex: 1 }} mb="8px" scale="md" color="#ffffff" id="lottery-hero-title">
+      <Heading style={{ zIndex: 1 }} mb="8px" scale="md" color="#FF720D" id="lottery-hero-title">
         {t('The PattieSwap Lottery')}
       </Heading>
       {getHeroHeading()}

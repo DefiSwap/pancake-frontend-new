@@ -12,7 +12,7 @@ import { flyingAnim } from './animations'
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
 
 const Devider = styled.div`
-  background: #ffffff;
+  background: #FF720D;
   height: 10px;
   width: 1px;
   border-radius: 1px;

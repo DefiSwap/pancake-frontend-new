@@ -73,7 +73,7 @@ const bounceOutAnimation = css`
 const Wrapper = styled.div`
   align-items: center;
   bottom: 72px;
-  color: #ffffff;
+  color: #FF720D;
   display: flex;
   justify-content: center;
   left: 0;
@@ -113,7 +113,7 @@ const Popup = styled.div`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 32px;
-  color: #ffffff;
+  color: #FF720D;
   display: flex;
   max-width: 320px;
   padding: 16px 8px;

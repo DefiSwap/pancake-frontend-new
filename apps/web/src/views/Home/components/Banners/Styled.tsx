@@ -18,7 +18,7 @@ export const StyledSubheading = styled(Heading)`
 `
 
 export const StyledHeading = styled(Heading)`
-  color: #ffffff;
+  color: #FF720D;
   background: -webkit-linear-gradient(#7645d9 0%, #452a7a 100%);
   background-clip: text;
   -webkit-background-clip: text;

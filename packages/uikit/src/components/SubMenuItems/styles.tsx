@@ -57,7 +57,7 @@ export const LeftMaskLayer = styled.div`
   background: ${({ theme }) =>
     theme.isDark
       ? `linear-gradient(90deg, #27262c 29.76%, rgba(39,38,44, 0) 100%)`
-      : `linear-gradient(90deg, #ffffff 29.76%, rgba(255, 255, 255, 0) 100%)`};
+      : `linear-gradient(90deg, #FF720D 29.76%, rgba(255, 255, 255, 0) 100%)`};
 `;
 export const RightMaskLayer = styled.div`
   ${maskSharedStyle}
@@ -65,7 +65,7 @@ export const RightMaskLayer = styled.div`
   background: ${({ theme }) =>
     theme.isDark
       ? `linear-gradient(270deg, #27262c 0%, rgba(39,38,44, 0) 87.5%)`
-      : `linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 87.5%)`};
+      : `linear-gradient(270deg, #FF720D 0%, rgba(255, 255, 255, 0) 87.5%)`};
 `;
 
 export const StyledSubMenuItemWrapper = styled(Box)`

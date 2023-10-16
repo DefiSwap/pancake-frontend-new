@@ -57,7 +57,7 @@ const PotImage = styled.div`
 const BalanceStyle = styled(Balance)`
   padding: 0 2px;
   color: ${({ theme }) => theme.colors.secondary};
-  background: #ffffff;
+  background: #FF720D;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 8px transparent;

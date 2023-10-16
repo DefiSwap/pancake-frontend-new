@@ -98,7 +98,7 @@ const Title = styled.div`
   font-weight: 600;
   font-size: 23px;
   line-height: 110%;
-  color: #ffffff;
+  color: #FF720D;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   padding-right: 80px;
   @media screen and (max-width: 375px) {
@@ -117,7 +117,7 @@ const StyledBox = styled(Box)`
   font-size: 12px;
   line-height: 110%;
   font-feature-settings: 'liga' off;
-  color: #ffffff;
+  color: #FF720D;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.mediaQueries.sm} {
     font-size: 21px;

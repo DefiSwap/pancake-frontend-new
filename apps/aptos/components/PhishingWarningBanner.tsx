@@ -57,7 +57,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           small
           as="span"
           bold={text === DOMAIN}
-          color={text === DOMAIN ? '#FFFFFF' : '#dbaa09'}
+          color={text === DOMAIN ? '#FF720D' : '#dbaa09'}
         >
           {text}
         </Text>
@@ -78,7 +78,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
       <AtomBox display={{ xs: 'flex', lg: 'none' }} alignItems="center" justifyContent="center" width="100%">
         <Box>{warningTextComponent}</Box>
         <IconButton onClick={hideBanner} variant="text">
-          <CloseIcon color="#FFFFFF" />
+          <CloseIcon color="#FF720D" />
         </IconButton>
       </AtomBox>
       <AtomBox display={{ xs: 'none', lg: 'flex' }} alignItems="center" justifyContent="center" width="100%">
@@ -87,7 +87,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           <SpeechBubble>{warningTextComponent}</SpeechBubble>
         </InnerContainer>
         <IconButton onClick={hideBanner} variant="text">
-          <CloseIcon color="#FFFFFF" />
+          <CloseIcon color="#FF720D" />
         </IconButton>
       </AtomBox>
     </Container>

@@ -99,7 +99,7 @@ const Header = styled.div`
   }
 `
 const SubTitle = styled.div`
-  color: #ffffff;
+  color: #FF720D;
   font-feature-settings: 'liga' off;
   font-family: Kanit;
   font-size: 19.847px;

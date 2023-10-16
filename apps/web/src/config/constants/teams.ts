@@ -30,7 +30,7 @@ const teams: Team[] = [
       ipfs: `${IPFS_GATEWAY}/QmXKzSojwzYjtDCVgR6mVx7w7DbyYpS7zip4ovJB9fQdMG/fearsome-flippers.png`,
     },
     background: 'fearsome-flippers-bg.svg',
-    textColor: '#FFFFFF',
+    textColor: '#FF720D',
     users: 0,
     points: 0,
   },

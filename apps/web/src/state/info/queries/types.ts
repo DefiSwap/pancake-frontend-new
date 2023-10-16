@@ -57,12 +57,12 @@ export interface pattieswapDayDatasResponse {
   pattieswapDayDatas: pattieswapDayData[]
 }
 
-export interface pattieswapDayData {
+export interface PairDayData {
   date: number // UNIX timestamp in seconds
   dailyVolumeUSD: string
   reserveUSD: string
 }
 
-export interface pattieswapDayDatasResponse {
-  pattieswapDayDatas: pattieswapDayData[]
+export interface PairDayDatasResponse {
+  pairDayDatas: PairDayData[]
 }

@@ -1,7 +1,7 @@
 import { gql } from 'graphql-request'
 import { ChartEntry } from 'state/info/types'
-import { pattieswapDayDatasResponse } from '../types'
-import { mappattieswapDayData, fetchChartDataWithAddress } from '../helpers'
+import { PairDayDatasResponse } from '../types'
+import { mapPairDayData, fetchChartDataWithAddress } from '../helpers'
 import { getMultiChainQueryEndPointWithStableSwap, MultiChainName, multiChainStartTime } from '../../constant'
 
 const getPoolChartData = async (
@@ -11,8 +11,8 @@ const getPoolChartData = async (
 ): Promise<{ data?: ChartEntry[]; error: boolean }> => {
   try {
     const query = gql`
-      query pattieswapDayDatas($startTime: Int!, $skip: Int!, $address: Bytes!) {
-        pattieswapDayDatas(
+      query pairDayDatas($startTime: Int!, $skip: Int!, $address: Bytes!) {
+        pairDayDatas(
           first: 1000
           skip: $skip
           where: { pairAddress: $address, date_gt: $startTime }
@@ -25,13 +25,13 @@ const getPoolChartData = async (
         }
       }
     `
-    const { pattieswapDayDatas } =
-      (await getMultiChainQueryEndPointWithStableSwap(chainName)?.request<pattieswapDayDatasResponse>(query, {
+    const { pairDayDatas } =
+      (await getMultiChainQueryEndPointWithStableSwap(chainName)?.request<PairDayDatasResponse>(query, {
         startTime: multiChainStartTime[chainName],
         skip,
         address,
       })) || {}
-    const data = pattieswapDayDatas?.map(mappattieswapDayData)
+    const data = pairDayDatas?.map(mapPairDayData)
     return { data, error: false }
   } catch (error) {
     console.error('Failed to fetch pool chart data', error)

@@ -22,26 +22,7 @@ const NetworkSelect = () => {
         <Text color="textSubtle">{t('Select a Network')}</Text>
       </Box>
       <UserMenuDivider />
-      {evmChains.map((chain) => (
-        <UserMenuItem
-          key={chain.id}
-          style={{ justifyContent: 'flex-start' }}
-          as="a"
-          target="_blank"
-          href={`${APEX_DOMAIN}?chain=${chain.chainName}`}
-        >
-          <Image
-            src={`${ASSETS_CDN}/web/chains/${chain.id}.png`}
-            width={24}
-            height={24}
-            unoptimized
-            alt={`chain-${chain.id}`}
-          />
-          <Text color="text" pl="12px">
-            {chain.name}
-          </Text>
-        </UserMenuItem>
-      ))}
+     
     </>
   )
 }

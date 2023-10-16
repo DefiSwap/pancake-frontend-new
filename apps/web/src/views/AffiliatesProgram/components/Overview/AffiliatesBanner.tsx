@@ -165,7 +165,7 @@ const AffiliatesBanner = () => {
             <Flex>
               <Link
                 external
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfP43IciQ5cH0JhTf1fDgUpwapBx-yD3ybv24pBdiVW7Th5jQ/viewform"
+                href="https://t.me/Pattieswap"
               >
                 <Button width="fit-content">{t('Join our Affiliate Program')}</Button>
               </Link>

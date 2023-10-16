@@ -29,7 +29,7 @@ const BASE_URLS = [PANCAKE_BASE_DEFAULT, OP_SUPER_CHAIN_URL, 'https://tokens.coi
 const OPBNB_URLS = [PANCAKE_OPBNB_DEFAULT]
 
 // List of official tokens list
-export const OFFICIAL_LISTS = [PANCAKE_EXTENDED]
+export const OFFICIAL_LISTS = [PANCAKE_EXTENDED, PANCAKE_EXTENDED]
 
 export const UNSUPPORTED_LIST_URLS: string[] = []
 export const WARNING_LIST_URLS: string[] = []

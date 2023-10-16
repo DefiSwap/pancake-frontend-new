@@ -52,11 +52,11 @@
     },
     {
       "name": "PattieSwap Token",
-      "symbol": "CAKE",
+      "symbol": "PATTIE",
       "address": "0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "https://pancakeswap.finance/images/tokens/0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D.png"
+      "logoURI": "https://i.ibb.co/qgCjtjj/logo.png"
     },
     {
       "name": "PattieSwap Token",

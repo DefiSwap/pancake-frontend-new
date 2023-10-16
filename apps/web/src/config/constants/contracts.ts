@@ -6,7 +6,7 @@ import { V3_QUOTER_ADDRESSES } from '@pancakeswap/smart-router/evm'
 export default {
   masterChef: {
     [ChainId.BSC_TESTNET]: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
-    [ChainId.BSC]: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
+    [ChainId.BSC]: '0xAf03a017B4167aaB3341C8118bF92E7C863B638f',
   },
   masterChefV3: masterChefV3Addresses,
   masterChefV1: {

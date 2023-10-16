@@ -9,7 +9,7 @@ describe('getFarmPrices tests', () => {
         lpAddress: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
         token: {
           chainId: 56,
-          address: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
+          address: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
           symbol: 'Cake',
           name: 'PancakeSwap Token',
           decimals: 18,

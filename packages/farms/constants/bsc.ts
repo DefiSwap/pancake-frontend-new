@@ -696,7 +696,7 @@ const farms: SerializedFarmConfig[] = [
     pid: 0,
     v1pid: 0,
     lpSymbol: 'CAKE',
-    lpAddress: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
+    lpAddress: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     token: bscTokens.syrup,
     quoteToken: bscTokens.wbnb,
   },

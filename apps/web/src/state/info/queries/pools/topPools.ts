@@ -10,7 +10,7 @@ import {
 import { useGetChainName } from '../../hooks'
 
 interface TopPoolsResponse {
-  pairDayDatas: {
+  pattieswapDayDatas: {
     id: string
   }[]
 }
@@ -29,7 +29,7 @@ const fetchTopPools = async (chainName: MultiChainName, timestamp24hAgo: number)
   try {
     const query = gql`
       query topPools($blacklist: [String!]) {
-        pairDayDatas(
+        pattieswapDayDatas(
           first: ${firstCount}
           ${whereCondition}
           orderBy: dailyVolumeUSD
@@ -42,8 +42,8 @@ const fetchTopPools = async (chainName: MultiChainName, timestamp24hAgo: number)
     const data = await getMultiChainQueryEndPointWithStableSwap(chainName).request<TopPoolsResponse>(query, {
       blacklist: multiChainTokenBlackList[chainName],
     })
-    // pairDayDatas id has compound id "0xPOOLADDRESS-NUMBERS", extracting pool address with .split('-')
-    return data.pairDayDatas.map((p) => p.id.split('-')[0])
+    // pattieswapDayDatas id has compound id "0xPOOLADDRESS-NUMBERS", extracting pool address with .split('-')
+    return data.pattieswapDayDatas.map((p) => p.id.split('-')[0])
   } catch (error) {
     console.error('Failed to fetch top pools', error)
     return []

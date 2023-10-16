@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 import { TransactionType } from 'state/info/types'
 import { ChartEntry } from '../types'
 import { MultiChainName, multiChainStartTime } from '../constant'
-import { MintResponse, SwapResponse, BurnResponse, TokenDayData, PairDayData, pattieswapDayData } from './types'
+import { MintResponse, SwapResponse, BurnResponse, TokenDayData, pattieswapDayData, pattieswapDayData } from './types'
 
 export const mapMints = (mint: MintResponse) => {
   return {
@@ -61,10 +61,10 @@ export const mapDayData = (tokenDayData: TokenDayData | pattieswapDayData): Char
   liquidityUSD: parseFloat(tokenDayData.totalLiquidityUSD),
 })
 
-export const mapPairDayData = (pairDayData: PairDayData): ChartEntry => ({
-  date: pairDayData.date,
-  volumeUSD: parseFloat(pairDayData.dailyVolumeUSD),
-  liquidityUSD: parseFloat(pairDayData.reserveUSD),
+export const mappattieswapDayData = (pattieswapDayData: pattieswapDayData): ChartEntry => ({
+  date: pattieswapDayData.date,
+  volumeUSD: parseFloat(pattieswapDayData.dailyVolumeUSD),
+  liquidityUSD: parseFloat(pattieswapDayData.reserveUSD),
 })
 
 type PoolOrTokenFetchFn = (

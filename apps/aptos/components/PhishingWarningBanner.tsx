@@ -57,7 +57,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           small
           as="span"
           bold={text === DOMAIN}
-          color={text === DOMAIN ? '#FFFFFF' : '#BDC2C4'}
+          color={text === DOMAIN ? '#FFFFFF' : '#dbaa09'}
         >
           {text}
         </Text>

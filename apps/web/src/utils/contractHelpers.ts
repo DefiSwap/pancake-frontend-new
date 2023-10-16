@@ -137,7 +137,7 @@ export const getPointCenterIfoContract = (signer?: WalletClient) => {
 export const getCakeContract = (chainId?: number) => {
   return getContract({
     abi: erc20ABI,
-    address: chainId ? CAKE[chainId]?.address : '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D'.address,
+    address: chainId ? CAKE[chainId]?.address : CAKE[ChainId.BSC].address,
     chainId,
   })
 }

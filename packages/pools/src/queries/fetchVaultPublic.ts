@@ -51,7 +51,7 @@ export const fetchPublicVaultData = async ({
         },
         {
           abi: balanceOfAbi,
-          address: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D'.address,
+          address: CAKE[ChainId.BSC].address,
           functionName: 'balanceOf',
           args: [cakeVaultAddress],
         },
@@ -106,7 +106,7 @@ export const fetchPublicFlexibleSideVaultData = async ({
         },
         {
           abi: balanceOfAbi,
-          address: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D'.address,
+          address: CAKE[ChainId.BSC].address,
           functionName: 'balanceOf',
           args: [cakeVaultAddress],
         },

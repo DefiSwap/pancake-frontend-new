@@ -122,16 +122,9 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <WedgeTopRight />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-        <CakeSection />
-        <Flex style={{ gap: 5 }} justifyContent="center" mt="40px">
-          <Text fontSize={24} bold>
-            {t('CAKE')}
-          </Text>
-          <Text fontSize={24} bold color="secondary">
-            {t('Figures')}
-          </Text>
-        </Flex>
-        <CakeDataRow />
+        
+       
+        
         <OuterWedgeWrapper>
           <InnerWedgeWrapper id="bottom-wedge4-2">
             <WedgeBottomRight />

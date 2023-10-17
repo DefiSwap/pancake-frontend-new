@@ -12,8 +12,18 @@ export const livePools: SerializedPool[] = [
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '10',
     isFinished: false,
-  }
- 
+  },
+  
+  {
+    sousId: 1,
+    stakingToken: bscTokens.cake,
+    earningToken: bscTokens.ach,
+    contractAddress: '0xD5668e936B951292Ddf8c84553CC58F85948F816',
+    poolCategory: PoolCategory.CORE,
+
+    enableEmergencyWithdraw: true,
+    tokenPerBlock: '7.502',
+  },
 ].map((p) => ({
   ...p,
   isFinished: true,

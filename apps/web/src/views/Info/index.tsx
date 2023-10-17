@@ -18,10 +18,7 @@ export const InfoPageLayout = ({ children }) => {
         label: t('V2'),
         href: `/info${chainPath}`,
       },
-      chainName === 'BSC' && {
-        label: t('StableSwap'),
-        href: '/info?type=stableSwap',
-      },
+     
     ],
     [t, chainPath, chainName],
   )

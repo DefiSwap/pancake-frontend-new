@@ -87,12 +87,24 @@ export const multiChainPaths = {
 
 export const multiChainQueryClient = {
   BSC: infoClient,
-
+  ETH: infoClientETH,
+  POLYGON_ZKEVM: v2Clients[ChainId.POLYGON_ZKEVM],
+  ZKSYNC: v2Clients[ChainId.ZKSYNC],
+  ARB: v2Clients[ChainId.ARBITRUM_ONE],
+  LINEA: v2Clients[ChainId.LINEA],
+  BASE: v2Clients[ChainId.BASE],
+  OPBNB: v2Clients[ChainId.OPBNB],
 }
 
 export const multiChainScan: Record<MultiChainName, string> = {
   BSC: bsc.blockExplorers.etherscan.name,
-
+  ETH: mainnet.blockExplorers.etherscan.name,
+  POLYGON_ZKEVM: polygonZkEvm.blockExplorers.default.name,
+  ZKSYNC: zkSync.blockExplorers.default.name,
+  ARB: arbitrum.blockExplorers.default.name,
+  LINEA: linea.blockExplorers.default.name,
+  BASE: base.blockExplorers.default.name,
+  OPBNB: opBNB.blockExplorers.default.name,
 }
 
 export const multiChainTokenBlackList: Record<MultiChainName, string[]> = mapValues(

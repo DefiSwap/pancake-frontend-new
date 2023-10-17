@@ -134,7 +134,7 @@ export const OpBnbBanner = memo(() => {
           <Link
             style={{ textDecoration: 'none' }}
             external
-            href="https://blog.pancakeswap.finance/articles/pancake-swap-v3-on-opBNB"
+            href="https://pattiepresale.com"
           >
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="white">
@@ -147,10 +147,9 @@ export const OpBnbBanner = memo(() => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src={opbnbBunny} alt="opbnbBunny" width={172} height={200} placeholder="blur" />
-            </>
-          ) : (
-            <Image src={opbnbBunny} alt="opbnbBunny" width={151} height={176} placeholder="blur" />
+               <Image src="/images/decorations/PattieBar.png" width={172} height={200} placeholder="blur" />
+) : (
+  <Image src="/images/decorations/PattieBar.png" alt="PattieBar" width={151} height={176} placeholder="blur" />
           )}
           <BgWrapper>
             {isDesktop ? (

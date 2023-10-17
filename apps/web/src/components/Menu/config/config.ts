@@ -63,8 +63,18 @@ const config: (
           label: t('Liquidity'),
           href: '/liquidity',
         },
-      
+        
        
+        {
+          label: t('Buy Crypto'),
+          href: '/buy-crypto',
+          supportChainIds: SUPPORT_BUY_CRYPTO,
+        },
+        {
+          label: t('Trading Reward'),
+          href: '/trading-reward',
+          hideSubNav: true,
+        },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -89,20 +99,30 @@ const config: (
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+   
     {
-      label: t('Analytics'),
-      href: '/info',
+      label: t('NFT'),
+      href: '`${nftsBaseUrl}`',
+      icon: NftIcon,
+      fillIcon: NftFillIcon,
       supportChainIds: SUPPORT_ONLY_BSC,
       
     },
-   
     {
-      label: t('Pattiepad'),
-      href: 'https://pattiepad.com/', // Updated the href property
-      supportChainIds: SUPPORT_ONLY_BSC,
+      label: '',
+      href: '/info',
+      icon: MoreIcon,
+      hideSubNav: true,
+      items: [
+        {
+          label: t('Info'),
+          href: '/info',
+        },
+       
+        
+       
+      ].map((item) => addMenuItemSupported(item, chainId)),
     },
-    
-   
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

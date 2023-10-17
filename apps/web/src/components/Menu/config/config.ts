@@ -64,11 +64,7 @@ const config: (
           href: '/liquidity',
         },
       
-        {
-          label: t('Trading Reward'),
-          href: '/trading-reward',
-          hideSubNav: true,
-        },
+       
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {

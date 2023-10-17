@@ -77,7 +77,13 @@ export const multiChainStartTime = {
 
 export const multiChainId: Record<MultiChainName, ChainId> = {
   BSC: ChainId.BSC,
- 
+  ETH: ChainId.ETHEREUM,
+  POLYGON_ZKEVM: ChainId.POLYGON_ZKEVM,
+  ZKSYNC: ChainId.ZKSYNC,
+  ARB: ChainId.ARBITRUM_ONE,
+  LINEA: ChainId.LINEA,
+  BASE: ChainId.BASE,
+  OPBNB: ChainId.OPBNB,
 }
 
 export const multiChainPaths = {

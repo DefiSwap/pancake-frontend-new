@@ -15,7 +15,7 @@ import {
 import type { CommonPrice } from '../../src/fetchFarmsV3'
 import type { FarmV3SupportedChainId } from '../../src'
 
-export const CAKE_BNB_LP_MAINNET = '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0'
+export const CAKE_BNB_LP_MAINNET = '0xD87b639850FC88b6F616a6CDBcDaFD345022CE6E'
 
 export type PriceHelper = {
   chain: string

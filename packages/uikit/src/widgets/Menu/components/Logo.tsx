@@ -45,11 +45,12 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const { linkComponent } = useContext(MenuContext);
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
-    <>
-      <img src="https://pattieswap.top1st.org/images/logo.png" className="mobile-icon" alt="Mobile Logo" />
-      <img src="https://pattieswap.top1st.org/images/logo.png" className="desktop-icon" alt="Desktop Logo" />
-    </>
+    <svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
+      <image x="10" y="10" width="30" height="30" xlink:href="images/home/cake/coin.webp" />
+      <text x="50" y="30" font-family="Arial, sans-serif" font-size="24" fill="orange">PattieSwap</text>
+    </svg>
   );
+  
   
 
   return (

@@ -88,13 +88,7 @@ export const multiChainId: Record<MultiChainName, ChainId> = {
 
 export const multiChainPaths = {
   [ChainId.BSC]: '',
-  [ChainId.ETHEREUM]: '/eth',
-  [ChainId.POLYGON_ZKEVM]: '/polygon-zkevm',
-  [ChainId.ZKSYNC]: '/zksync',
-  [ChainId.ARBITRUM_ONE]: '/arb',
-  [ChainId.LINEA]: '/linea',
-  [ChainId.BASE]: '/base',
-  [ChainId.OPBNB]: '/opbnb',
+
 }
 
 export const multiChainQueryClient = {

@@ -131,12 +131,14 @@ const BaseBanner = () => {
     >
       <S.Inner>
         <S.LeftWrapper position="relative" style={{ zIndex: 3, justifyContent: isMobile ? 'flex-start' : 'center' }}>
-        <Flex alignItems="center" mb={isMobile ? '0' : '0.5rem'} style={{ gap: isMobile ? 8 : 10 }}>
-          <span style={{ color: 'white' }}>PattieSwap</span>
-
-            <Divider />
-            <OpBnbLogo width={33} height={33} />
-          </Flex>
+          <Flex alignItems="center" mb="8px" style={{ gap: isMobile ? 8 : 10 }}>
+            <Image
+              src={pancakeSwapLogo}
+              alt="pancakeSwapLogo"
+              width={isMobile ? 100 : 132}
+              height={isMobile ? 15 : 22}
+              unoptimized
+            />
             <Divider />
             <BaseLogo width={60} height={16} />
           </Flex>
@@ -145,7 +147,7 @@ const BaseBanner = () => {
           <Link
             style={{ textDecoration: 'none' }}
             external
-            href="https://pattiepad.com"
+            href="https://blog.pancakeswap.finance/articles/pancake-swap-v3-on-base"
           >
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="#000000">

@@ -91,6 +91,13 @@ const config: (
     },
    
     {
+      label: t('Pattiepad'),
+      href: 'https://pattiepad.com',
+      supportChainIds: SUPPORT_ONLY_BSC,
+      
+    },
+
+    {
       label: t('Analytics'),
       href: '/info',
       supportChainIds: SUPPORT_ONLY_BSC,

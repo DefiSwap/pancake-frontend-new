@@ -100,7 +100,7 @@ const config: (
       label: t('Pattiepad'),
       href: 'https://pattiepad.com/', // Updated the href property
       supportChainIds: SUPPORT_ONLY_BSC,
-    }
+    },
     
    
   ].map((item) => addMenuItemSupported(item, chainId))

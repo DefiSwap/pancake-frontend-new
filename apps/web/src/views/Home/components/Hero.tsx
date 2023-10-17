@@ -281,9 +281,7 @@ const Hero = () => {
                   <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>
                     <source src={`${ASSET_CDN}/web/landing/star.webm`} type="video/webm" />
                   </CakeVideo>
-                  <CakeVideo ref={cakeVideoRef} width={width} autoPlay loop muted playsInline>
-                    <source src={`${ASSET_CDN}/web/landing/hero-cake.webm`} type="video/webm" />
-                  </CakeVideo>
+                 
                   <CakeVideo ref={rock01VideoRef} width={width} autoPlay loop muted playsInline>
                     <source src={`${ASSET_CDN}/web/landing/rock01.webm`} type="video/webm" />
                   </CakeVideo>

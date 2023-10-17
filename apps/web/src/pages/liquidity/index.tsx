@@ -324,10 +324,7 @@ export default function PoolListPage() {
                 variant="subtle"
               >
                 <ButtonMenuItem>{t('All')}</ButtonMenuItem>
-                <ButtonMenuItem>V3</ButtonMenuItem>
-                <ButtonMenuItem display={isStableSwapSupported(chainId) ? 'inline-flex' : 'none'}>
-                  {t('StableSwap')}
-                </ButtonMenuItem>
+               
                 <ButtonMenuItem>V2</ButtonMenuItem>
               </ButtonMenu>
             </>

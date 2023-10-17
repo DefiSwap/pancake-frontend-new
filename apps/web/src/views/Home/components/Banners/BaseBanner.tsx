@@ -10,13 +10,12 @@ import { flyingAnim } from './animations'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
 
-const BaseLogo = (props: SvgProps) => (
-  <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 16" fill="none" {...props}>
+const OpBnbLogo = (props: SvgProps) => (
+  <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" {...props}>
+    <circle cx="16.5" cy="16.5" r="16.5" fill="black" />
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M15.8379 7.91893C15.8379 12.2924 12.2862 15.8379 7.90511 15.8379C3.74856 15.8379 0.338654 12.6466 0 8.58458H10.4853V7.25327H0C0.338654 3.19126 3.74856 0 7.90511 0C12.2862 0 15.8379 3.54542 15.8379 7.91893ZM45.2475 14.4031C47.9962 14.4031 49.799 12.9217 49.799 10.6906C49.799 8.62009 48.4424 7.6384 46.3899 7.29927L44.5692 6.99583C43.1771 6.7638 42.2488 6.15692 42.2488 4.81825C42.2488 3.46173 43.2842 2.42649 45.2475 2.42649C47.1573 2.42649 48.139 3.39033 48.2461 4.7647H49.6205C49.5134 2.94411 48.1211 1.31985 45.2653 1.31985C42.4452 1.31985 40.8924 2.9084 40.8924 4.8718C40.8924 6.96013 42.3024 7.92398 44.2301 8.24526L46.0686 8.53085C47.6035 8.79858 48.4602 9.42329 48.4602 10.7441C48.4602 12.297 47.193 13.2965 45.2653 13.2965C43.2663 13.2965 42.0168 12.3327 41.9097 10.6906H40.5533C40.6604 12.8325 42.3024 14.4031 45.2475 14.4031ZM24.9836 14.1533H19.9858V1.58759H24.8051C26.9291 1.58759 28.4105 2.83701 28.4105 4.83611C28.4105 6.28187 27.5895 7.24571 26.2688 7.56699V7.62055C27.8394 7.92398 28.8032 8.99492 28.8032 10.6727C28.8032 12.8325 27.2147 14.1533 24.9836 14.1533ZM24.6266 7.10293C26.1438 7.10293 27.0719 6.28187 27.0719 4.99674V4.81825C27.0719 3.53313 26.1438 2.72992 24.6266 2.72992H21.3246V7.10293H24.6266ZM24.7872 13.0109C26.4472 13.0109 27.4646 12.1006 27.4646 10.7084V10.5299C27.4646 9.08416 26.4294 8.20957 24.7694 8.20957H21.3246V13.0109H24.7872ZM39.6135 14.1533H38.1855L37.1146 10.7441H32.1169L31.046 14.1533H29.6894L33.8126 1.58759H35.4368L39.6135 14.1533ZM34.6871 2.96196H34.5801L32.4738 9.61964H36.7755L34.6871 2.96196ZM51.8096 14.1533V1.58759H59.8774V2.74777H53.1484V7.06723H59.342V8.20957H53.1484V12.9931H59.8774V14.1533H51.8096Z"
-      fill="white"
+      d="M10.6397 8.89271L16.5571 5.5L22.4745 8.89271L20.2542 10.0854L16.5571 7.97563L12.7639 10.0854L10.6397 8.89271ZM22.3835 13.1073L20.2542 11.9146L16.5571 14.0244L12.7639 11.9146L10.6346 13.1073V15.5829L14.3368 17.6927V22.0025L16.466 23.2854L18.5953 22.0025V17.7879L22.2975 15.6781V13.1123H22.3835V13.1073ZM22.3835 19.8927V17.4171L20.2542 18.7V21.0804L22.3835 19.8927ZM23.9564 20.7146L20.2593 22.8244V25.3L26.1817 21.9073V15.1269L23.9614 16.5L23.9564 20.7146ZM21.8271 11.0025L23.9564 12.2854V14.761L26.0856 13.4781V11.0025L23.9564 9.71959L21.8271 11.0025ZM14.3368 23.7415V26.2171L16.466 27.5L18.5953 26.2171V23.7415L16.466 25.0244L14.3368 23.7415ZM10.6346 19.8927L12.7639 21.0854V18.6098L10.6346 17.3269V19.8927ZM14.3368 11.0025L16.466 12.2854L18.6863 11.0025L16.5571 9.71959L14.3368 11.0025ZM9.06676 12.2854L11.287 11.0025L9.06676 9.71959L6.9375 11.0025V13.4781L9.06676 14.761V12.2854ZM9.06676 16.5L6.9375 15.2171V21.9975L12.86 25.3902V22.9146L9.15779 20.8048V16.495L9.06676 16.5Z"
+      fill="#F0B90B"
     />
   </Svg>
 )
@@ -131,23 +130,18 @@ const BaseBanner = () => {
     >
       <S.Inner>
         <S.LeftWrapper position="relative" style={{ zIndex: 3, justifyContent: isMobile ? 'flex-start' : 'center' }}>
-          <Flex alignItems="center" mb="8px" style={{ gap: isMobile ? 8 : 10 }}>
-            <Image
-              src={pancakeSwapLogo}
-              alt="pancakeSwapLogo"
-              width={isMobile ? 100 : 132}
-              height={isMobile ? 15 : 22}
-              unoptimized
-            />
+        <Flex alignItems="center" mb={isMobile ? '0' : '0.5rem'} style={{ gap: isMobile ? 8 : 10 }}>
+          <span style={{ color: 'white' }}>PattieSwap</span>
+
             <Divider />
-            <BaseLogo width={60} height={16} />
+            <OpBnbLogo width={33} height={33} />
           </Flex>
-          <Header>{isMobile ? t('Base is LIVE!') : t('PattieSwap Now Live on Base!')}</Header>
-          {!isMobile && <SubTitle>{t('Swap and Provide Liquidity Now')}</SubTitle>}
+          <Header>{isMobile ? t('Base is LIVE!') : t('PattiePad Is Live')}</Header>
+          {!isMobile && <SubTitle>{t('Launch Your Project Tokens on Pattie Launchpad')}</SubTitle>}
           <Link
             style={{ textDecoration: 'none' }}
             external
-            href="https://blog.pancakeswap.finance/articles/pancake-swap-v3-on-base"
+            href="https://pattiepad.com"
           >
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="#000000">

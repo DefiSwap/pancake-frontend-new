@@ -124,18 +124,13 @@ export const OpBnbBanner = memo(() => {
       <S.Inner>
         <S.LeftWrapper position="relative" style={{ zIndex: 3, justifyContent: isMobile ? 'flex-start' : 'center' }}>
           <Flex alignItems="center" mb={isMobile ? '0' : '0.5rem'} style={{ gap: isMobile ? 8 : 10 }}>
-            <Image
-              src={pancakeSwapLogo}
-              alt="pancakeSwapLogo"
-              width={isMobile ? 100 : 132}
-              height={isMobile ? 15 : 22}
-              unoptimized
-            />
+          <span style={{ color: 'white' }}>PattieSwap</span>
+
             <Divider />
             <OpBnbLogo width={33} height={33} />
           </Flex>
-          <Header>{isMobile ? t('opBNB is LIVE!') : t('PattieSwap Now Live on opBNB!')}</Header>
-          {!isMobile && <SubTitle>{t('Swap and Provide Liquidity Now')}</SubTitle>}
+          <Header>{isMobile ? t('Pattie Presale!') : t('PattieSwap IDO is LIVE!')}</Header>
+          {!isMobile && <SubTitle>{t('BUY and Provide Liquidity Now')}</SubTitle>}
           <Link
             style={{ textDecoration: 'none' }}
             external
@@ -143,7 +138,7 @@ export const OpBnbBanner = memo(() => {
           >
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="white">
-                {t('Get Started')}
+                {t('BUY NOW')}
               </Text>
               <OpenNewIcon color="white" />
             </Button>

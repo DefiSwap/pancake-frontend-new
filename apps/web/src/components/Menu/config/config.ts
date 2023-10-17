@@ -66,11 +66,6 @@ const config: (
         
        
         {
-          label: t('Buy Crypto'),
-          href: '/buy-crypto',
-          supportChainIds: SUPPORT_BUY_CRYPTO,
-        },
-        {
           label: t('Trading Reward'),
           href: '/trading-reward',
           hideSubNav: true,
@@ -100,28 +95,7 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
    
-    {
-      label: t('NFT'),
-      href: `${nftsBaseUrl}`,
-      icon: NftIcon,
-      fillIcon: NftFillIcon,
-      supportChainIds: SUPPORT_ONLY_BSC,
-      image: '/images/decorations/nft.png',
-      items: [
-        {
-          label: t('Overview'),
-          href: `${nftsBaseUrl}`,
-        },
-        {
-          label: t('Collections'),
-          href: `${nftsBaseUrl}/collections`,
-        },
-        {
-          label: t('Activity'),
-          href: `${nftsBaseUrl}/activity`,
-        },
-      ],
-    },
+   
     {
       label: '',
       href: '/info',
@@ -133,12 +107,7 @@ const config: (
           href: '/info',
         },
        
-        {
-          label: t('Affiliate Program'),
-          href: '/affiliates-program',
-        },
-      
-       
+        
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },

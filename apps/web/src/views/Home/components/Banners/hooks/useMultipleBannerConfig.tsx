@@ -51,15 +51,15 @@ export const useMultipleBannerConfig = () => {
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [
-      { shouldRender: false, banner: <GalxeTraverseBanner /> },
-      { shouldRender: false, banner: <TradingRewardBanner /> },
-      { shouldRender: false, banner: <LiquidStakingBanner /> },
+      { shouldRender: true, banner: <GalxeTraverseBanner /> },
+      { shouldRender: true, banner: <TradingRewardBanner /> },
+      { shouldRender: true, banner: <LiquidStakingBanner /> },
       {
         shouldRender: isRenderCompetitionBanner,
         banner: <CompetitionBanner />,
       },
       {
-        shouldRender: false,
+        shouldRender: true,
         banner: <PerpetualBanner />,
       },
     ]

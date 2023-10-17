@@ -63,8 +63,7 @@ const config: (
           label: t('Liquidity'),
           href: '/liquidity',
         },
-        
-       
+      
         {
           label: t('Trading Reward'),
           href: '/trading-reward',
@@ -95,22 +94,13 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
    
-   
     {
-      label: '',
+      label: t('ANALYTICS'),
       href: '/info',
-      icon: MoreIcon,
-      hideSubNav: true,
-      items: [
-        {
-          label: t('Info'),
-          href: '/info',
-        },
-       
-        
-       
-      ].map((item) => addMenuItemSupported(item, chainId)),
+      supportChainIds: SUPPORT_ONLY_BSC,
+      
     },
+   
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

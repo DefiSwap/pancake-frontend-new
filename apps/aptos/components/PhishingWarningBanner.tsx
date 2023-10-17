@@ -78,7 +78,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
       <AtomBox display={{ xs: 'flex', lg: 'none' }} alignItems="center" justifyContent="center" width="100%">
         <Box>{warningTextComponent}</Box>
         <IconButton onClick={hideBanner} variant="text">
-          <CloseIcon color="#FF720D" />
+          <CloseIcon color="#000000" />
         </IconButton>
       </AtomBox>
       <AtomBox display={{ xs: 'none', lg: 'flex' }} alignItems="center" justifyContent="center" width="100%">

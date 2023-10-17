@@ -12,7 +12,7 @@ export const livePools: SerializedPool[] = [
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '10',
     isFinished: false,
-  },
+  }
  
 ].map((p) => ({
   ...p,

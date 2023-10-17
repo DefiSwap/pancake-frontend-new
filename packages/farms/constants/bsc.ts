@@ -8,9 +8,9 @@ import { FarmConfigV3, SerializedFarmConfig } from '..'
 const v3TopFixedLps: FarmConfigV3[] = [
   {
     pid: 1,
-    token0: bscTokens.cake,
+    token0: bscTokens.busd,
     token1: bscTokens.wbnb,
-    lpAddress: '0x133B3D95bAD5405d14d53473671200e9342896BF',
+    lpAddress: '0x64edC2C7882FFa5B2b94d666e24f3b8613669ED8',
     feeAmount: FeeAmount.MEDIUM,
   },
   {

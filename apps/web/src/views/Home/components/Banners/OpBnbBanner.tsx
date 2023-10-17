@@ -8,7 +8,7 @@ import * as S from './Styled'
 import { opbnbBunny, opbnbBg, opbnbBgMobile } from './images'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
-const pattiebar = "https://i.imgur.com/FQszbms.png";
+const pattiebar = "https://i.imgur.com/FQszbms.png"
 
 const OpBnbLogo = (props: SvgProps) => (
   <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" {...props}>

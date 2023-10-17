@@ -14,16 +14,16 @@ export const livePools: SerializedPool[] = [
     isFinished: false,
   },
   
-  {
-    sousId: 1,
-    stakingToken: bscTokens.cake,
-    earningToken: bscTokens.ach,
-    contractAddress: '0xD5668e936B951292Ddf8c84553CC58F85948F816',
-    poolCategory: PoolCategory.CORE,
+].map((p) => ({
+  ...p,
+  contractAddress: getAddress(p.contractAddress),
+  stakingToken: p.stakingToken.serialize,
+  earningToken: p.earningToken.serialize,
+}))
 
-    enableEmergencyWithdraw: true,
-    tokenPerBlock: '7.502',
-  },
+// known finished pools
+const finishedPools = [
+ 
 ].map((p) => ({
   ...p,
   isFinished: true,

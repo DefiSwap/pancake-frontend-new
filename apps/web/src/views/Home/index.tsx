@@ -142,27 +142,8 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         <RightTopBox />
         <CommunitySection />
       </PageSection>
-      <PageSection
-        innerProps={{
-          style: {
-            ...HomeSectionContainerStyles,
-            maxWidth: '1400px',
-          },
-        }}
-        background={theme.colors.background}
-        index={2}
-        hasCurvedDivider={false}
-      >
-        
-      </PageSection>
-      <PageSection
-        innerProps={{ style: HomeSectionContainerStyles }}
-        background="linear-gradient(180deg, #7645D9 0%, #5121B1 100%)"
-        index={2}
-        hasCurvedDivider={false}
-      >
-        <Footer />
-      </PageSection>
+    
+     
     </Box>
   )
 }

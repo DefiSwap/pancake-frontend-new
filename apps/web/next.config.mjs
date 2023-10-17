@@ -77,11 +77,11 @@ const config = {
     return [
       {
         source: '/info/token/:address',
-        destination: '/info/tokens/:address',
+        destination: '/info/tokens/:address?chain=bsc',
       },
       {
         source: '/info/pool/:address',
-        destination: '/info/pools/:address',
+        destination: '/info/pools/:address?chain=bsc',
       },
     ]
   },

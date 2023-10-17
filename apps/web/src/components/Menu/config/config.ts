@@ -91,7 +91,7 @@ const config: (
     },
    
     {
-      label: t('ANALYTICS'),
+      label: t('Analytics'),
       href: '/info',
       supportChainIds: SUPPORT_ONLY_BSC,
       

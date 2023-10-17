@@ -89,13 +89,19 @@ const config: (
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-   
     {
-      label: t('ANALYTICS'),
+      label: t('Analytics'),
       href: '/info',
       supportChainIds: SUPPORT_ONLY_BSC,
       
     },
+   
+    {
+      label: t('Pattiepad'),
+      href: 'https://pattiepad.com/', // Updated the href property
+      
+    }
+    
    
   ].map((item) => addMenuItemSupported(item, chainId))
 

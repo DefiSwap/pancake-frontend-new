@@ -95,25 +95,7 @@ const CommunitySection = () => {
           </Text>
           <Flex flexDirection="row" flexWrap="wrap" alignItems="center" style={{ gap: 24 }} justifyContent="center">
             <CommunitySummary />
-            <StyledSwiper
-              modules={[Autoplay, Pagination, EffectFade]}
-              spaceBetween={50}
-              observer
-              slidesPerView={1}
-              effect="fade"
-              fadeEffect={{ crossFade: true }}
-              speed={500}
-              autoplay={{ delay: 5000, pauseOnMouseEnter: true, disableOnInteraction: false }}
-              loop
-              pagination={{ clickable: true }}
-            >
-              <SwiperSlide key="TwitterCards">
-                <TwitterCards />
-              </SwiperSlide>
-              <SwiperSlide key="BlogCard">
-                <BlogCard />
-              </SwiperSlide>
-            </StyledSwiper>
+           
           </Flex>
         </Flex>
 

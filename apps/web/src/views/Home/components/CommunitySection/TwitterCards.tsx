@@ -116,7 +116,7 @@ export const TwitterCards: React.FC = () => {
       </LogoBox>
       <Flex alignItems="center">
         <Text mt="10px" fontSize={14} bold>
-          PattieSwap🥞Ev3ryone&#39;s Favourite D3X
+          PattieSwap
         </Text>
         <VerifiedIcon ml="3px" mt="9px" color={theme.colors.secondary} />
       </Flex>

@@ -41,12 +41,12 @@ const CommunityTag = styled.div`
   }
 `
 const communityData = [
-  { icon: <TwitterIcon />, href: 'https://twitter.com/pancakeswap', alt: 'TwitterIcon' },
-  { icon: <TelegramIcon />, href: 'https://t.me/pancakeswap', alt: 'TelegramIcon' },
-  { icon: <DiscordIcon />, href: 'https://discord.gg/pancakeswap', alt: 'DiscordIcon' },
-  { icon: <InstagramIcon />, href: 'https://www.instagram.com/pancakeswap_official/', alt: 'InstagramIcon' },
-  { icon: <RedditIcon />, href: 'https://www.reddit.com/r/pancakeswap/', alt: 'RedditIcon' },
-  { icon: <YoutubeIcon />, href: 'https://www.youtube.com/@pancakeswap_official', alt: 'YoutubeIcon' },
+  { icon: <TwitterIcon />, href: 'https://twitter.com/pattieswap', alt: 'TwitterIcon' },
+  { icon: <TelegramIcon />, href: 'https://t.me/pattieswap_chat', alt: 'TelegramIcon' },
+  { icon: <DiscordIcon />, href: 'https://discord.gg/', alt: 'DiscordIcon' },
+  { icon: <InstagramIcon />, href: 'https://www.instagram.com/', alt: 'InstagramIcon' },
+  { icon: <RedditIcon />, href: 'https://www.reddit.com/r/pattieswap/', alt: 'RedditIcon' },
+  { icon: <YoutubeIcon />, href: 'https://www.youtube.com/@pattieswap_4510', alt: 'YoutubeIcon' },
 ]
 
 export const CommunityTags: React.FC = () => {

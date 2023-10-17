@@ -106,7 +106,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <WedgeTopLeft />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-       
+        <EcoSystemSection />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -153,7 +153,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        
+        <NewsSection />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

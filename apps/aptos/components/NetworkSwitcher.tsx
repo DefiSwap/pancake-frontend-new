@@ -35,6 +35,24 @@ export const NetworkSwitcher = () => {
   const isMounted = useIsMounted()
 
   return (
-   
+    <UserMenu
+      mr="8px"
+      variant="default"
+      avatarSrc="https://tokens.pancakeswap.finance/images/symbol/apt.png"
+      avatarClassName={aptosLogoClass({
+        isProduction: isMounted && chain?.id === ChainId.MAINNET,
+      })}
+      placement="bottom"
+      text={
+        <>
+          <Box display={['none', null, null, null, null, 'block']}>
+            {`Aptos${isMounted && chain?.testnet && chain?.name ? ` ${chain?.name}` : ''}`}
+          </Box>
+          <Box display={['block', null, null, null, null, 'none']}>APT</Box>
+        </>
+      }
+    >
+      {() => <NetworkSelect />}
+    </UserMenu>
   )
 }

@@ -76,11 +76,11 @@ const config = {
   async rewrites() {
     return [
       {
-        source: '/info/token/:address',
+        source: '/info/token/:address?chain=bsc',
         destination: '/info/tokens/:address?chain=bsc',
       },
       {
-        source: '/info/pool/:address',
+        source: '/info/pool/:address?chain=bsc',
         destination: '/info/pools/:address?chain=bsc',
       },
     ]

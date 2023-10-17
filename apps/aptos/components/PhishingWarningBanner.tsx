@@ -87,7 +87,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           <SpeechBubble>{warningTextComponent}</SpeechBubble>
         </InnerContainer>
         <IconButton onClick={hideBanner} variant="text">
-          <CloseIcon color="#FF720D" />
+          <CloseIcon color="#000000" />
         </IconButton>
       </AtomBox>
     </Container>

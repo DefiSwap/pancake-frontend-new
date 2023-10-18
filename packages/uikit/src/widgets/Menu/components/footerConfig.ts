@@ -21,10 +21,7 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         label: t("PattiePad"),
         href: "https://pattiepad.com/",
       },
-      {
-        label: t("Tokenomics"),
-        href: "https://docs.pancakeswap.finance/governance-and-tokenomics/cake-tokenomics",
-      },
+      
       
     ],
   },

@@ -234,7 +234,7 @@ const SingleFarmV3Card: React.FunctionComponent<
                     }}
                   >
                     <StyledTooltip
-                      data-theme={isDark ? 'dark' : 'dark'}
+                      data-theme={isDark ? 'dark' : 'light'}
                       style={{
                         maxWidth: '160px',
                         position: 'relative',

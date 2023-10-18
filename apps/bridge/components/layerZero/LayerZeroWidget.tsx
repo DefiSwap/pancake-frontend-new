@@ -12,7 +12,7 @@ declare global {
 
 export const LayerZeroWidget = ({ theme }: { theme: PancakeTheme }) => {
   useEffect(() => {
-    const themeText = theme.isDark ? 'dark' : 'dark'
+    const themeText = theme.isDark ? 'dark' : 'light'
 
     const fetch = async () => {
       const app: any = await customElements.whenDefined('lz-bridge')

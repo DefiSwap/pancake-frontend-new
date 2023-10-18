@@ -33,7 +33,7 @@ const BuyTicketsButton: React.FC<React.PropsWithChildren<BuyTicketsButtonProps>>
     )
   }
 
-  const themeStr = themeMode ?? (isDark ? 'dark' : 'dark')
+  const themeStr = themeMode ?? (isDark ? 'dark' : 'light')
 
   return (
     <Button data-theme={themeStr} {...props} disabled={disabled} onClick={onPresentBuyTicketsModal}>

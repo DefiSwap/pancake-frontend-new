@@ -41,7 +41,7 @@ const Menu = (props) => {
   const activeSubMenuItem = getActiveSubMenuItem({ menuItem: activeMenuItem, pathname })
 
   const toggleTheme = useMemo(() => {
-    return () => setTheme(isDark ? 'dark' : 'dark')
+    return () => setTheme(isDark ? 'dark' : 'light')
   }, [setTheme, isDark])
 
   const getFooterLinks = useMemo(() => {

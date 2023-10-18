@@ -127,7 +127,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <PreTitle mb="24px">{t('Global')}</PreTitle>
               <Flex justifyContent="space-between" mb="24px">
                 <Text>{t('Dark mode')}</Text>
-                <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'dark' : 'dark')} />
+                <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'dark' : 'light')} />
               </Flex>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">

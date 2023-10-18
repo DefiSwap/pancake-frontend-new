@@ -29,7 +29,7 @@ export const fetchMoonPaySignedUrl = async (
         baseCurrencyCode: outputCurrency.toLowerCase(),
         baseCurrencyAmount: amount,
         redirectUrl: 'https://pancakeswap.finance',
-        theme: isDark ? 'dark' : 'dark',
+        theme: isDark ? 'dark' : 'light',
         walletAddress: account,
         isTestEnv: 'production',
       }),

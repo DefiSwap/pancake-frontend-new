@@ -705,7 +705,7 @@ const farms: SerializedFarmConfig[] = [
     v1pid: 251,
     lpSymbol: 'PATC-WBNB LP',
     lpAddress: CAKE_BNB_LP_MAINNET,
-    token: bscTokens.cake,
+    token: '0x46777d443A2e41091fCC5e305D7caf64BBa455Aa',
     quoteToken: bscTokens.wbnb,
     boosted: true,
   },

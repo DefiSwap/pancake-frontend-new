@@ -105,7 +105,7 @@ const DataRow: React.FC<React.PropsWithChildren<{ tokenData: TokenData; index: n
   const stableSwapPath = useStableSwapPath()
 
   return (
-    <LinkWrapper to={`/info/v2/${chianPath}/tokens/${tokenData.address}${stableSwapPath}`}>
+    <LinkWrapper to={`/info${chianPath}/tokens/${tokenData.address}${stableSwapPath}`}>
       <ResponsiveGrid>
         <Flex>
           <Text>{index + 1}</Text>

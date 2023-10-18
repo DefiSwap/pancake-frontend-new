@@ -76,12 +76,12 @@ const config = {
   async rewrites() {
     return [
       {
-        source: '/info/token/:address?chain=bsc',
-        destination: '/info/tokens/:address?chain=bsc',
+        source: '/info/v2/token/:address',
+        destination: '/info/v2/tokens/:address',
       },
       {
-        source: '/info/pool/:address?chain=bsc',
-        destination: '/info/pools/:address?chain=bsc',
+        source: '/info/pool/:address',
+        destination: '/info/pools/:address',
       },
     ]
   },
@@ -168,13 +168,13 @@ const config = {
         permanent: true,
       },
       {
-        source: '/info/pools',
-        destination: '/info/pairs',
+        source: '/info/v2/pools',
+        destination: '/info/v2/pairs',
         permanent: true,
       },
       {
-        source: '/info/pools/:address',
-        destination: '/info/pairs/:address',
+        source: '/info/v2/pools/:address',
+        destination: '/info/v2/pairs/:address',
         permanent: true,
       },
       {

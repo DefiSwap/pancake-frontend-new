@@ -115,9 +115,7 @@ export const BCakeBoosterCard = () => {
   })
   return (
     <CardWrapper>
-      <ImageWrapper>
-        <Image src={boosterCardImage} alt="boosterCardImage" width={99} height={191} placeholder="blur" />
-      </ImageWrapper>
+    
       <Card p="0px" style={{ zIndex: 1 }}>
         <StyledCardBody style={{ padding: '15px 24px' }}>
           <RocketIcon />

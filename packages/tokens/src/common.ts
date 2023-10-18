@@ -5,7 +5,7 @@ export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
   '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
   18,
-  'CAKE',
+  'Pattie',
   'PattieSwap Token',
   'https://pancakeswap.finance/',
 )

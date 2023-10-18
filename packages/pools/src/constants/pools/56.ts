@@ -6,8 +6,8 @@ import { PoolCategory, SerializedPool } from '../../types'
 export const livePools: SerializedPool[] = [
   {
     sousId: 0,
-    stakingToken: bscTokens.cake,
-    earningToken: bscTokens.cake,
+    stakingToken: bscTokens.pattie,
+    earningToken: bscTokens.patc,
     contractAddress: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '10',

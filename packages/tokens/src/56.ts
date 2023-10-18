@@ -15,6 +15,22 @@ export const bscTokens = {
     'https://www.binance.com/',
   ),
   cake: CAKE_MAINNET,
+  pattie: new ERC20Token(
+    ChainId.BSC,
+    '0x0ee4024e8d5ae9affce26f692028407dd2050b7d',
+    18,
+    'PATTIE',
+    'PattieSwap Token',
+    'https://pattieswap.finance',
+  ),
+  patc: new ERC20Token(
+    ChainId.BSC,
+    '0x46777d443A2e41091fCC5e305D7caf64BBa455Aa',
+    18,
+    'PATC',
+    'Pattie Code',
+    'https://pattieswap.finance',
+  ),
   gmi: new ERC20Token(
     ChainId.BSC,
     '0x93D8d25E3C9A847a5Da79F79ecaC89461FEcA846',

@@ -228,4 +228,4 @@ const docLangCodeMapping: Record<string, string> = {
 export const getDocLink = (code: string) =>
   docLangCodeMapping[code]
     ? `https://docs.pancakeswap.finance/v/${docLangCodeMapping[code]}/get-started/wallet-guide`
-    : `https://docs.pancakeswap.finance/get-started/wallet-guide`
+    : `https://support.metamask.io/hc/en-us/articles/360045901112-Manually-connecting-to-a-dapp`

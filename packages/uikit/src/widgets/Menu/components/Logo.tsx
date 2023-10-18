@@ -46,11 +46,19 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
-      <text x="10" y="30" font-family="Arial, sans-serif" font-size="24" fill="#FF720D">
+      <image
+        href="https://i.ibb.co/qgCjtjj/logo.png" // URL of the image
+        x="10" // X-coordinate of the image
+        y="10" // Y-coordinate of the image
+        width="32" // Width of the image
+        height="32" // Height of the image
+      />
+      <text x="50" y="30" font-family="Arial, sans-serif" font-size="24" fill="#FF720D">
         PattieSwap
       </text>
     </svg>
   );
+  
   ;
   
   

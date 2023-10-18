@@ -47,7 +47,7 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
   const innerLogo = (
     <svg width="200" height="50" xmlns="http://www.w3.org/2000/svg">
       <image
-        href="https://i.ibb.co/qgCjtjj/logo.png" // URL of the image
+        href="https://i.imgur.com/UiElfyI.png" // URL of the image
         x="10" // X-coordinate of the image
         y="10" // Y-coordinate of the image
         width="32" // Width of the image

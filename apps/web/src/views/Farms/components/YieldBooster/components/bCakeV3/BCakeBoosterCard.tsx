@@ -151,7 +151,7 @@ const CardContent: React.FC = () => {
           {t('Connect wallet to view booster')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
+          {t('An active fixed-term PATTIEstaking position is required for activating farm yield boosters.')}
         </Text>
         <ConnectWalletButton width="100%" style={{ backgroundColor: theme.colors.textSubtle }} />
       </Box>
@@ -163,7 +163,7 @@ const CardContent: React.FC = () => {
           {t('No CAKE locked')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
+          {t('An active fixed-term PATTIEstaking position is required for activating farm yield boosters.')}
         </Text>
         <NextLink href="/pools" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
@@ -179,7 +179,7 @@ const CardContent: React.FC = () => {
           {t('Locked staking is ended')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term CAKE staking position is required for activating farm yield boosters.')}
+          {t('An active fixed-term PATTIEstaking position is required for activating farm yield boosters.')}
         </Text>
         <NextLink href="/pools" passHref>
           <Button width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>

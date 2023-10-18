@@ -8,7 +8,7 @@ import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const [theme, setTheme] = useState<'dark' | 'dark'>('dark')
   return (
     <UIKitProvider theme={light}>
       <Head>
@@ -21,7 +21,7 @@ export default function Home() {
         <Button
           variant="primary"
           onClick={() => {
-            setTheme(theme === 'light' ? 'dark' : 'light')
+            setTheme(theme === 'dark' ? 'dark' : 'dark')
           }}
         >
           Toggle Theme

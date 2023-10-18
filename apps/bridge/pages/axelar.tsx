@@ -72,7 +72,7 @@ const Axelar = () => {
           width: 16px;
         }
 
-        [data-theme='light'] {
+        [data-theme='dark'] {
           .tw-dsw-toggle-secondary:not(:checked) {
             box-shadow: calc(1.5rem * -1) 0 0 2px #efebf4 inset, 0 0 0 2px #efebf4 inset, 0 0 !important;
           }

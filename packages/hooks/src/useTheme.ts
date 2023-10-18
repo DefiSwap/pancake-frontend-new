@@ -11,7 +11,7 @@ const useTheme = () => {
   const theme = useContext(StyledThemeContext)!
 
   const handleSwitchTheme = useCallback(
-    (themeValue: 'light' | 'dark') => {
+    (themeValue: 'dark' | 'dark') => {
       try {
         setTheme(themeValue)
         Cookie.set(COOKIE_THEME_KEY, themeValue, { domain: THEME_DOMAIN })

@@ -92,7 +92,7 @@ export function FixedStakingModal({
                         }
                         key={pool.lockPeriod}
                         scale="md"
-                        variant={pool.lockPeriod === lockPeriod ? 'subtle' : 'light'}
+                        variant={pool.lockPeriod === lockPeriod ? 'subtle' : 'dark'}
                         width="100%"
                         mx="2px"
                         onClick={() => setLockPeriod(pool.lockPeriod)}

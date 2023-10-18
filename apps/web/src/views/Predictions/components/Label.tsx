@@ -179,7 +179,7 @@ export const PricePairLabel: React.FC<React.PropsWithChildren> = () => {
     <>
       <Box pl={['20px', '20px', '20px', '20px', '40px']} position="relative" display="inline-block">
         {!dismissTooltip && (
-          <Tooltip data-theme={isDark ? 'light' : 'dark'}>
+          <Tooltip data-theme={isDark ? 'dark' : 'dark'}>
             <Text mr="5px" display="inline-block" verticalAlign="super">
               {t('Switch pairs here.')}
             </Text>

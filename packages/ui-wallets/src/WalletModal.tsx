@@ -401,7 +401,7 @@ export function WalletModalV2<T = unknown>(props: WalletModalV2Props<T>) {
       wallets
         .map((w) => w.icon)
         .filter((icon) => typeof icon === 'string')
-        .concat('https://i.imgur.com/UiElfyI.png') as string[],
+        .concat('https://i.imgur.com/7aHK3m7.jpg') as string[],
     [wallets],
   )
 
@@ -458,7 +458,7 @@ const Intro = ({ docLink, docText }: { docLink: string; docText: string }) => {
       <Heading as="h1" fontSize="20px" color="secondary">
         {t('Haven’t got a wallet yet?')}
       </Heading>
-      <Image src="https://i.imgur.com/UiElfyI.png" width={198} height={178} />
+      <Image src="https://i.imgur.com/7aHK3m7.jpg" width={198} height={178} />
       <Button as={LinkExternal} color="backgroundAlt" variant="subtle" href={docLink}>
         {docText}
       </Button>

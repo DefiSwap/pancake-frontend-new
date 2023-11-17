@@ -13,7 +13,7 @@ export const SEO: DefaultSeoProps = {
   openGraph: {
     title: '🥞 PattieSwap - A next evolution DeFi exchange on BNB Smart Chain (BSC)',
     description:
-      'The most popular AMM on BSC by user count! Earn CAKE through yield farming or win it in the Lottery, then stake it in Syrup Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by PattieSwap), NFTs, and more, on a platform you can trust.',
+      'PattieSwap is a decentralized exchange built on top of the Binance Smart Chain (BSC) that allows users to conduct swaps by its automated market maker (AMM)',
     images: [{ url: 'https://assets.pancakeswap.finance/web/og/hero.jpg' }],
   },
 }

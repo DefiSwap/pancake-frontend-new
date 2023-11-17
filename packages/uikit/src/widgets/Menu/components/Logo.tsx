@@ -71,7 +71,7 @@ const Logo: React.FC<React.PropsWithChildren<Props>> = ({ href }) => {
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink href={href} as={linkComponent} aria-label="Pancake home page">
+        <StyledLink href={href} aria-label="Pancake home page">
           {innerLogo}
         </StyledLink>
       )}

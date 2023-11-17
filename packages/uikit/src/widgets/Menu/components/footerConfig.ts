@@ -14,8 +14,8 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
         href: "/farms",
       },
       {
-        label: t("PattieFlip"),
-        href: "https://pattieflip.com/",
+        label: t("Pattie City"),
+        href: "https://pattiecity.com/",
       },
       {
         label: t("PattiePad"),

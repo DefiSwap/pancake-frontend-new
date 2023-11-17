@@ -46,7 +46,7 @@ export const useEcosystemTagData = () => {
       },
       {
         icon: <TrophyIcon />,
-        text: t('PattieFlip'),
+        text: t('Pattie City'),
       },
       { icon: <GovernanceIcon />, text: t('PattiePad') },
       { icon: <StoreIcon />, text: t('IFO') },

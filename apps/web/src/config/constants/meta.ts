@@ -7,7 +7,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'PattieSwap',
   description:
     'PattieSwap is a decentralized exchange built on top of the Binance Smart Chain (BSC) that allows users to conduct swaps by its automated market maker (AMM).',
-  image: `https://raw.githubusercontent.com/Pattieswap/assets/main/logo.png`,
+  image: `/web/og/hero.jpg`,
 }
 
 interface PathList {

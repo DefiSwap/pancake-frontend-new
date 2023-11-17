@@ -218,10 +218,7 @@ export const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>
       style={{ maxWidth: '420px' }}
     >
       <ScrollableContainer>
-        <Flex justifyContent="space-between" mb="24px">
-          <Text>{t('Dark mode')}</Text>
-          <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'dark' : 'dark')} />
-        </Flex>
+       
         <Flex pt="3px" flexDirection="column">
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">

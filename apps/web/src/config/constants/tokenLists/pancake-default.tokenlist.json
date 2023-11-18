@@ -59,6 +59,14 @@
       "logoURI": "https://i.ibb.co/qgCjtjj/logo.png"
     },
     {
+      "name": "PATC",
+      "symbol": "PATC",
+      "address": "0x46777d443a2e41091fcc5e305d7caf64bba455aa",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/Pattieswap/assets/main/patctoken.png"
+    },
+    {
       "name": "PattieSwap Token",
       "symbol": "CAKE",
       "address": "0xFa60D973F7642B748046464e165A65B7323b0DEE",

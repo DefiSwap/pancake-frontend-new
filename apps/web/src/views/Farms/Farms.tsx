@@ -447,21 +447,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
           </FilterContainer>
         </ControlContainer>
         {isInactive && chainId === ChainId.BSC && (
-          <FinishedTextContainer>
-            <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-              {t("Don't see the farm you are staking?")}
-            </Text>
-            <Flex>
-              <FinishedTextLink
-                external
-                color="failure"
-                fontSize={['16px', null, '20px']}
-                href="https://v1-farms.pancakeswap.finance/farms/history"
-              >
-                {t('check out v1 farms')}.
-              </FinishedTextLink>
-            </Flex>
-          </FinishedTextContainer>
+         
         )}
         {viewMode === ViewMode.TABLE ? (
           <Table farms={chosenFarmsMemoized as V2Farm[]} cakePrice={cakePrice} userDataReady={userDataReady} />

@@ -7,7 +7,7 @@ Thanks for taking the time to contribute !
 - Before requesting a review, all the checks need to pass
 - Explain what your PR does
 
-##### Setup
+### Setup
 
 Install the dependencies
 

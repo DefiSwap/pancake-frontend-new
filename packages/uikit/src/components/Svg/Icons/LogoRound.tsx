@@ -24,7 +24,12 @@ const Icon: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
         d="M40.592 54.047c0 3.11-1.455 4.73-3.25 4.73-1.794 0-3.249-1.62-3.249-4.73 0-3.11 1.455-4.73 3.25-4.73 1.794 0 3.249 1.62 3.249 4.73zM61.712 54.047c0 3.11-1.455 4.73-3.25 4.73-1.794 0-3.248-1.62-3.248-4.73 0-3.11 1.454-4.73 3.249-4.73 1.794 0 3.25 1.62 3.25 4.73z"
         fill="#633001"
       />
-     
+      <defs>
+        <linearGradient id="paint0_linear_10493" x1={48} y1={0} x2={48} y2={96} gradientUnits="userSpaceOnUse">
+          <stop stopColor="#53DEE9" />
+          <stop offset={1} stopColor="#FF720D" />
+        </linearGradient>
+      </defs>
     </Svg>
   );
 };

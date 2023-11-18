@@ -70,8 +70,7 @@ const Menu = (props) => {
         links={menuItems}
         subLinks={activeMenuItem?.hideSubNav || activeSubMenuItem?.hideSubNav ? [] : activeMenuItem?.items}
         footerLinks={getFooterLinks}
-        activeItem={activeMenuItem?.href}
-        activeSubItem={activeSubMenuItem?.href}
+        
         buyCakeLabel={t('Buy Pattie')}
         buyCakeLink="https://pattieswap.finance/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
         {...props}

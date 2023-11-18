@@ -192,7 +192,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
             <div />
           )}
           <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight + 1}px` : "0"}>
-            
+            <Inner>{children}</Inner>
           </BodyWrapper>
         </Wrapper>
       </AtomBox>
@@ -207,7 +207,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         cakePriceUsd={cakePriceUsd}
         buyCakeLabel={buyCakeLabel}
         buyCakeLink={buyCakeLink}
-        mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
+       
       />
       <AtomBox display={{ xs: "block", md: "none" }}>
         <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />

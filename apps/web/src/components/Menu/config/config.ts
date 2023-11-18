@@ -92,41 +92,37 @@ const config: (
 
     {
       label: t('Analytics'),
-      icon: MoreIcon,
+      icon: Baricon,
       fillIcon: SwapFillIcon,
       href: '/info',
       showItemsOnMobile: false,
       items: [
         {
-          label: t('Analytics'),
-          href: '/info',
+          label: t('Swap'),
+          href: '/swap',
         },
-       
+        {
+          label: t('Liquidity'),
+          href: '/liquidity',
+        },
       
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-   
    
     {
       label: t('Pattiepad'),
-      icon: MoreIcon,
-      fillIcon: MoreIcon,
       href: 'https://pattiepad.com',
-      showItemsOnMobile: false,
-      items: [
-        {
-          label: t('Pattiepad'),
-          href: 'https://pattiepad.com',
-        },
-       
+      supportChainIds: SUPPORT_ONLY_BSC,
       
-       
-      ].map((item) => addMenuItemSupported(item, chainId)),
     },
-   
 
-    
+    {
+      label: t('Analytics'),
+      href: '/info',
+      supportChainIds: SUPPORT_ONLY_BSC,
+      
+    },
    
   ].map((item) => addMenuItemSupported(item, chainId))
 

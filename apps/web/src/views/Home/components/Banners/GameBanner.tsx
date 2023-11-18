@@ -130,21 +130,21 @@ const GameBanner = () => {
         <S.LeftWrapper position="relative" style={{ zIndex: 3, justifyContent: isMobile ? 'flex-start' : 'center' }}>
           <Flex alignItems="center" mb="8px" style={{ gap: isMobile ? 8 : 10 }}>
             <Image
-              
-              alt="pancakeSwapLogo"
+              src={pancakeSwapLogo}
+              alt="PattieSwap Gaming Place "
               width={isMobile ? 100 : 132}
               height={isMobile ? 15 : 22}
               unoptimized
             />
           </Flex>
-          <Header data-text={isMobile ? t('Gaming Marketplace') : t('PattieSwap Gaming Place')}>
-            {isMobile ? t('PattieSwap Gaming Place') : t('PattieSwap Gaming Place')}
+          <Header data-text={isMobile ? t('PattieSwap Gaming Place ') : t('PattieSwap Gaming Place ')}>
+            {isMobile ? t('PattieSwap Gaming Place ') : t('PattieSwap Gaming Place ')}
           </Header>
           <Box>
             {isDesktop ? (
               <Flex mt="8px">
                 <GradientText backgroundColor="#34FBA6" mr="4px">
-                  {t('Earn while You Relax Play-to Earn Decentralized Real Estate Platform')}
+                  {t('Explore Your')}
                 </GradientText>
                 {currentLanguage.code === 'en' ? (
                   <Box m="4px 4px 0 0">

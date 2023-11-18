@@ -7,25 +7,19 @@ export const COOKIE_THEME_KEY = 'theme'
 export const THEME_DOMAIN = '.pancakeswap.finance'
 
 const useTheme = () => {
-  const { resolvedTheme, setTheme } = useNextTheme()
+  const { setTheme } = useNextTheme()
   const theme = useContext(StyledThemeContext)!
 
-  const handleSwitchTheme = useCallback(
-    (themeValue: 'light' | 'dark') => {
-      try {
-        setTheme(themeValue)
-        Cookie.set(COOKIE_THEME_KEY, themeValue, { domain: THEME_DOMAIN })
-      } catch (err) {
-        // ignore set cookie error for perp theme
-      }
-    },
-    [setTheme],
-  )
+  const handleSwitchTheme = useCallback(() => {
+    try {
+      setTheme('dark') // Set the theme directly to 'dark'
+      Cookie.set(COOKIE_THEME_KEY, 'dark', { domain: THEME_DOMAIN })
+    } catch (err) {
+      // ignore set cookie error for perp theme
+    }
+  }, [setTheme])
 
-  return useMemo(
-    () => ({ isDark: resolvedTheme === 'dark', theme, setTheme: handleSwitchTheme }),
-    [theme, resolvedTheme, handleSwitchTheme],
-  )
+  return useMemo(() => ({ isDark: true, theme, setTheme: handleSwitchTheme }), [theme, handleSwitchTheme])
 }
 
 export default useTheme

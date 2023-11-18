@@ -542,12 +542,12 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
             )}
             {chainId && V3_MIGRATION_SUPPORTED_CHAINS.includes(chainId) && (
               <FinishedTextContainer>
-                <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-                  {t('Unstaking from v2 farm?')}
+                <Text>
+                  {t('')}
                 </Text>
                 <Flex>
-                  <FinishedTextLink external color="failure" fontSize={['16px', null, '20px']} href="/migration">
-                    {t('Migrate to v3 here')}.
+                  <FinishedTextLink>
+                    {t('')}.
                   </FinishedTextLink>
                 </Flex>
               </FinishedTextContainer>

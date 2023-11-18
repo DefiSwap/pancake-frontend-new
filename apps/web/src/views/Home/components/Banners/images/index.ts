@@ -85,6 +85,11 @@ import mercuryoLogo from './mercuryo-logo.png'
 import opbnbBg from './opbnb-bg.png'
 import opbnbBgMobile from './opbnb-bg-mobile.png'
 import opbnbBunny from './PattieBar.png'
+import gameDesktopBg from './game-desktop-bg.png'
+import gameDesktopBunny from './game-desktop-bunny.png'
+import gameMobileBunny from './game-mobile-bunny.png'
+import gameCube from './game-cube.png'
+
 
 export {
   lotteryImage,
@@ -173,4 +178,8 @@ export {
   opbnbBg,
   opbnbBgMobile,
   opbnbBunny,
+  gameDesktopBg,
+  gameDesktopBunny,
+  gameMobileBunny,
+  gameCube,
 }

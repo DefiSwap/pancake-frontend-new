@@ -531,15 +531,10 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
             {chainId === ChainId.BSC && (
               <FinishedTextContainer>
                 <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-                  {t("?")}
+                  {t("")}
                 </Text>
                 <Flex>
-                  <FinishedTextLink
-                    external
-                    color="failure"
-                    fontSize={['16px', null, '20px']}
-                    href=""
-                  >
+                  
                     {t('')}.
                   </FinishedTextLink>
                 </Flex>

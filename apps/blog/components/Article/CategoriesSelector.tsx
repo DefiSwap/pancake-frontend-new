@@ -27,7 +27,7 @@ const CategoriesSelector = ({ selected, categoriesData, childMargin, setSelected
           display="block"
           width="fit-content"
           m={childMargin}
-          variant={selected === category.id ? 'subtle' : 'light'}
+          variant={selected === category.id ? 'subtle' : 'dark'}
           onClick={() => setSelected(category.id)}
         >
           {category.name}

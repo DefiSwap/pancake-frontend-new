@@ -87,7 +87,7 @@ export const PancakeSwapTheme = {
     },
     shape: { borderRadius },
     palette: {
-      mode: 'light',
+      mode: 'dark',
       primary: {
         main: '#1EC7D3',
         contrastText: '#FF720D',

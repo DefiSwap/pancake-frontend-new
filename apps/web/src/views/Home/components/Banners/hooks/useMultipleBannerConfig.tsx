@@ -12,7 +12,6 @@ import UserBanner from '../UserBanner'
 import useIsRenderCompetitionBanner from './useIsRenderCompetitionBanner'
 import useIsRenderIfoBanner from './useIsRenderIFOBanner'
 import useIsRenderUserBanner from './useIsRenderUserBanner'
-import GameBanner from '../GameBanner'
 
 interface IBannerConfig {
   shouldRender: boolean
@@ -45,7 +44,7 @@ export const useMultipleBannerConfig = () => {
       },
       { shouldRender: true, banner: <OpBnbBanner /> },
       { shouldRender: true, banner: <BaseBanner /> },
-      { shouldRender: true, banner: <GameBanner /> },
+      
       {
         shouldRender: isRenderIFOBanner,
         banner: <IFOBanner />,

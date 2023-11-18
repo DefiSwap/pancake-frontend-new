@@ -535,12 +535,9 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                 </Text>
                 <Flex>
                   <FinishedTextLink
-                    external
-                    color="failure"
-                    fontSize={['16px', null, '20px']}
-                    href=""
+                   
                   >
-                    {t('')}.
+                    
                   </FinishedTextLink>
                 </Flex>
               </FinishedTextContainer>

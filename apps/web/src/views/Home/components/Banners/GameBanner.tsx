@@ -141,30 +141,30 @@ const GameBanner = () => {
             {isMobile ? t('PattieSwap Gaming Place') : t('PattieSwap Gaming Place')}
           </Header>
           <Box>
-            {isDesktop ? (
-              <Flex mt="8px">
-                <GradientText backgroundColor="#34FBA6" mr="4px">
-                  {t('Earn while You Relax Play-to Earn Decentralized Real Estate Platform')}
-                </GradientText>
-               
-                <GradientText backgroundColor="linear-gradient(90deg, #88FF5C 10.97%, #F4E23B 27.39%, #FFDF38 99.79%)">
-                  {t('1.5M Monthly Players Await!')}
-                </GradientText>
-              </Flex>
-            ) : (
-              <>
-                {currentLanguage.code === 'en' ? (
-                  <Box mt="8px">
-                    <Image src={gameMobileText} alt="gameMobileText" width={84} height={20} placeholder="blur" />
-                  </Box>
-                ) : (
-                  <Text fontSize={20} bold color="#05FFC3">
-                    {t('is Live')}
-                  </Text>
-                )}
-              </>
-            )}
-          </Box>
+  {isDesktop ? (
+    <Flex mt="8px">
+      <GradientText backgroundColor="#34FBA6" mr="4px">
+        {t('Earn while You Relax Play-to Earn Decentralized Real Estate Platform')}
+      </GradientText>
+      <GradientText backgroundColor="linear-gradient(90deg, #88FF5C 10.97%, #F4E23B 27.39%, #FFDF38 99.79%)">
+        {t('1.5M Monthly Players Await!')}
+      </GradientText>
+    </Flex>
+  ) : (
+    <>
+      {currentLanguage.code === 'en' ? (
+        <Box mt="8px">
+          <Image src={gameMobileText} alt="gameMobileText" width={84} height={20} placeholder="blur" />
+        </Box>
+      ) : (
+        <Text fontSize={20} bold color="#05FFC3">
+          {t('is Live')}
+        </Text>
+      )}
+    </>
+  )}
+</Box>
+
           <Link style={{ textDecoration: 'none' }} external href="https://pattiecity.com/">
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="#05FFC3">

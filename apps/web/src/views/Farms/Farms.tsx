@@ -447,7 +447,21 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
           </FilterContainer>
         </ControlContainer>
         {isInactive && chainId === ChainId.BSC && (
-         
+          <FinishedTextContainer>
+            <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
+              {t("")}
+            </Text>
+            <Flex>
+              <FinishedTextLink
+                external
+                color="failure"
+                fontSize={['16px', null, '20px']}
+                href=""
+              >
+                {t('')}.
+              </FinishedTextLink>
+            </Flex>
+          </FinishedTextContainer>
         )}
         {viewMode === ViewMode.TABLE ? (
           <Table farms={chosenFarmsMemoized as V2Farm[]} cakePrice={cakePrice} userDataReady={userDataReady} />

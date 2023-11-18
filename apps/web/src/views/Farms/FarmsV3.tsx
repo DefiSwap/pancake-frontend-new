@@ -535,9 +535,9 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
                 </Text>
                 <Flex>
                   <FinishedTextLink
-                   
+                  
                   >
-                    
+                    {t('')}.
                   </FinishedTextLink>
                 </Flex>
               </FinishedTextContainer>

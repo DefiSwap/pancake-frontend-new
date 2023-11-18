@@ -48,7 +48,7 @@ const StyledSwiper = styled(Swiper)`
         border-radius: 0px 4px 4px 0px;
       }
       &.swiper-pagination-bullet-active {
-        background-color: #7645d9;
+        background-color: #FF720D;
       }
     }
   }

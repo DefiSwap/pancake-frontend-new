@@ -80,7 +80,7 @@ const Axelar = () => {
           .tw-flex ul li > span:first-child,
           .tw-flex ul li > span:first-child a,
           .tw-rounded-t-box.tw-flex.tw-flex-col span.tw-flex.tw-flex-row.tw-items-center:first-child {
-            color: #7645d9 !important;
+            color: #FF720D !important;
             font-weight: 600 !important;
           }
         }

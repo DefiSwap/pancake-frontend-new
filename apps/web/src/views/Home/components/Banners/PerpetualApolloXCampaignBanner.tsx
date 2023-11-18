@@ -72,7 +72,7 @@ const Header = styled.div`
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   ${({ theme }) => theme.mediaQueries.md} {
     font-size: 40px;
-    color: #7645d9;
+    color: #FF720D;
     background: #FF720D;
     font-family: 'Kanit';
     -webkit-background-clip: text;

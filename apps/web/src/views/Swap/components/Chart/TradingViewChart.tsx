@@ -26,7 +26,7 @@ const LoadingWrapper = styled.div<{ $isDark: boolean }>`
   background: ${({ theme }) => theme.colors.backgroundAlt};
 
   ${({ theme }) => theme.mediaQueries.md} {
-    background: ${({ $isDark }) => ($isDark ? '#2E2E42' : '#F4FCFF')};
+    background: ${({ $isDark }) => ($isDark ? '#2E2E42' : '#2E2E42')};
   }
 `
 

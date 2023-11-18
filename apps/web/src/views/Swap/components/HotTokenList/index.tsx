@@ -43,7 +43,7 @@ const Wrapper = styled.div`
     width: 725px;
     padding: 24px;
     box-sizing: border-box;
-    background: ${({ theme }) => (theme.isDark ? 'rgba(39, 38, 44, 0.5)' : 'rgba(255, 255, 255, 0.5)')};
+    background: ${({ theme }) => (theme.isDark ? 'rgba(255, 255, 255, 0.5)' : 'rgba(255, 255, 255, 0.5)')};
     border-top: none;
     border-radius: 0px 0px 32px 32px;
   }

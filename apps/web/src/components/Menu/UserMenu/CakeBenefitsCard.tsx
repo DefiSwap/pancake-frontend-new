@@ -22,7 +22,7 @@ const CakeBenefitsCardWrapper = styled(Box)`
   width: 100%;
   margin-bottom: 24px;
   padding: 1px 1px 3px 1px;
-  background: linear-gradient(180deg, #53dee9, #7645d9);
+  background: linear-gradient(180deg, #53dee9, #FF720D);
   border-radius: ${({ theme }) => theme.radii.default};
 `
 

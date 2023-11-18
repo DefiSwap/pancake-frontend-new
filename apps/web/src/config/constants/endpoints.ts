@@ -70,7 +70,7 @@ export const BLOCKS_CLIENT_WITH_CHAIN = {
   [ChainId.OPBNB]: BLOCKS_CLIENT_OPBNB,
 }
 
-export const ASSET_CDN = 'https://plotbsc.com'
+export const ASSET_CDN = 'https://assets.pancakeswap.finance'
 
 export const V3_SUBGRAPH_URLS = {
   [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth',

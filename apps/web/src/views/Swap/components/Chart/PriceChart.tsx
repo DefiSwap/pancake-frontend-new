@@ -22,7 +22,7 @@ const PriceChart = ({
     <StyledPriceChart
       height="70%"
       overflow="unset"
-      $isDark={isDark}
+      $isDark={true}
       $isExpanded={isChartExpanded}
       $isFullWidthContainer={isFullWidthContainer}
     >

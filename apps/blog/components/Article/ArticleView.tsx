@@ -76,7 +76,7 @@ const ArticleView: React.FC<React.PropsWithChildren<ArticleViewProps>> = ({ titl
         )}
       </StyledTitleContainer>
       <NoSSR>
-        <StyledContainer isDark={isDark}>
+        <StyledContainer isDark={true}>
           <Container>{children}</Container>
         </StyledContainer>
       </NoSSR>

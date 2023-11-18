@@ -14,7 +14,7 @@ const ArtistSection = () => {
   const { headingText, bodyText, buttons, image } = artistConfigBuilder({ t, isDark })
 
   return (
-    <StyledArtistSectionContainer $isDark={isDark} justifyContent={['flex-start', null, null, 'center']}>
+    <StyledArtistSectionContainer $isDark={true} justifyContent={['flex-start', null, null, 'center']}>
       <LandingBodyWrapper
         py={['64px', null, null, '100px']}
         alignItems={['center']}
@@ -42,7 +42,7 @@ const ArtistSection = () => {
                 {text}
               </Text>
             ))}
-            <TriangleBio isDark={isDark} />
+            <TriangleBio isDark={true} />
           </StyledArtistBioContainer>
           <Flex
             flexDirection={['column', null, null, 'row']}
@@ -69,7 +69,7 @@ const ArtistSection = () => {
         </Flex>
       </LandingBodyWrapper>
       <StyledWaveContainer bottom="-3px">
-        <ArtistBottomWave isDark={isDark} />
+        <ArtistBottomWave isDark={true} />
       </StyledWaveContainer>
     </StyledArtistSectionContainer>
   )

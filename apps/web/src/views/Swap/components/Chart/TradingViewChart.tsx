@@ -90,7 +90,7 @@ const TradingViewChart = ({ outputSymbol, inputSymbol, isDark, onTwChartSymbol }
         </Flex>
       )}
       {(isLoading || debouncedLoading) && !hasNoData && (
-        <LoadingWrapper $isDark={isDark}>
+        <LoadingWrapper $isDark={true}>
           <BarChartLoader />
         </LoadingWrapper>
       )}

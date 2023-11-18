@@ -531,16 +531,16 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
             {chainId === ChainId.BSC && (
               <FinishedTextContainer>
                 <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-                  {t("Don't see the farm you are staking?")}
+                  {t("?")}
                 </Text>
                 <Flex>
                   <FinishedTextLink
                     external
                     color="failure"
                     fontSize={['16px', null, '20px']}
-                    href="https://v1-farms.pancakeswap.finance/farms/history"
+                    href=""
                   >
-                    {t('check out v1 farms')}.
+                    {t('')}.
                   </FinishedTextLink>
                 </Flex>
               </FinishedTextContainer>

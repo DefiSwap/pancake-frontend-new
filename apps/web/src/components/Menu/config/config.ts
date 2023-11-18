@@ -89,20 +89,44 @@ const config: (
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-   
-    {
-      label: t('Pattiepad'),
-      href: 'https://pattiepad.com',
-      supportChainIds: SUPPORT_ONLY_BSC,
-      
-    },
 
     {
       label: t('Analytics'),
+      icon: MoreIcon,
+      fillIcon: SwapFillIcon,
       href: '/info',
-      supportChainIds: SUPPORT_ONLY_BSC,
+      showItemsOnMobile: false,
+      items: [
+        {
+          label: t('Analytics'),
+          href: '/info',
+        },
+       
       
+       
+      ].map((item) => addMenuItemSupported(item, chainId)),
     },
+   
+   
+    {
+      label: t('Pattiepad'),
+      icon: MoreIcon,
+      fillIcon: MoreIcon,
+      href: 'https://pattiepad.com',
+      showItemsOnMobile: false,
+      items: [
+        {
+          label: t('Pattiepad'),
+          href: 'https://pattiepad.com',
+        },
+       
+      
+       
+      ].map((item) => addMenuItemSupported(item, chainId)),
+    },
+   
+
+    
    
   ].map((item) => addMenuItemSupported(item, chainId))
 

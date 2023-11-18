@@ -76,9 +76,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
                     {t('')}
                   </Text>
                   <FinishedTextLink
-                    href=""
-                    fontSize={['16px', null, '20px']}
-                    color="failure"
+                   
                   >
                     {t('')}.
                   </FinishedTextLink>

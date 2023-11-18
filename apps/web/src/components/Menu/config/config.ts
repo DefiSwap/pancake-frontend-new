@@ -89,26 +89,6 @@ const config: (
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-
-    {
-      label: t('Analytics'),
-      icon: Baricon,
-      fillIcon: SwapFillIcon,
-      href: '/info',
-      showItemsOnMobile: false,
-      items: [
-        {
-          label: t('Swap'),
-          href: '/swap',
-        },
-        {
-          label: t('Liquidity'),
-          href: '/liquidity',
-        },
-      
-       
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
    
     {
       label: t('Pattiepad'),

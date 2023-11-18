@@ -39,7 +39,7 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
   return (
     <>
       <Box px="16px" py="8px">
-        <Text color="textSubtle">{t('Select a Networkass')}</Text>
+        <Text color="textSubtle">{t('Select a Networkassp')}</Text>
       </Box>
       <UserMenuDivider />
       {chains

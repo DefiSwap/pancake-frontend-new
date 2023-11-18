@@ -130,34 +130,23 @@ const GameBanner = () => {
         <S.LeftWrapper position="relative" style={{ zIndex: 3, justifyContent: isMobile ? 'flex-start' : 'center' }}>
           <Flex alignItems="center" mb="8px" style={{ gap: isMobile ? 8 : 10 }}>
             <Image
-              src={pancakeSwapLogo}
+              
               alt="pancakeSwapLogo"
               width={isMobile ? 100 : 132}
               height={isMobile ? 15 : 22}
               unoptimized
             />
           </Flex>
-          <Header data-text={isMobile ? t('Gaming Marketplace') : t('PancakeSwap Gaming Marketplace')}>
-            {isMobile ? t('Gaming Marketplace') : t('PancakeSwap Gaming Marketplace')}
+          <Header data-text={isMobile ? t('Gaming Marketplace') : t('PattieSwap Gaming Place')}>
+            {isMobile ? t('PattieSwap Gaming Place') : t('PattieSwap Gaming Place')}
           </Header>
           <Box>
             {isDesktop ? (
               <Flex mt="8px">
                 <GradientText backgroundColor="#34FBA6" mr="4px">
-                  {t('Explore Your')}
+                  {t('Earn while You Relax Play-to Earn Decentralized Real Estate Platform')}
                 </GradientText>
-                {currentLanguage.code === 'en' ? (
-                  <Box m="4px 4px 0 0">
-                    <Image src={gameText} alt="gameText" width={177} height={19} placeholder="blur" />
-                  </Box>
-                ) : (
-                  <>
-                    <GradientText backgroundColor="#88FF5C 120%">{t('GameFi Spirit')}</GradientText>
-                    <Text as="span" m="0 2px">
-                      💚
-                    </Text>
-                  </>
-                )}
+               
                 <GradientText backgroundColor="linear-gradient(90deg, #88FF5C 10.97%, #F4E23B 27.39%, #FFDF38 99.79%)">
                   {t('1.5M Monthly Players Await!')}
                 </GradientText>
@@ -176,7 +165,7 @@ const GameBanner = () => {
               </>
             )}
           </Box>
-          <Link style={{ textDecoration: 'none' }} external href="https://pancakeswap.games/">
+          <Link style={{ textDecoration: 'none' }} external href="https://pattiecity.com/">
             <Button variant="text" pl="0px" pt="0px" scale={isMobile ? 'sm' : 'md'}>
               <Text textTransform={isMobile ? 'uppercase' : 'capitalize'} bold fontSize="16px" color="#05FFC3">
                 {t('Try Now')}

@@ -26,7 +26,7 @@ const FinishedRounds: React.FC<React.PropsWithChildren> = () => {
   const { isDark } = useTheme()
 
   return (
-    <FinishedRoundsBg isDark={true}>
+    <FinishedRoundsBg isDark={isDark}>
       <PageSection index={1} dividerPosition="top" clipFill={{ light: COVEX_BG, dark: COVEX_BG }}>
         <FinishedRoundsContainer>
           <OutlineText fontSize="40px" mb="32px" bold textAlign="center">

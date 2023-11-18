@@ -23,9 +23,9 @@ const EventStepsSection: React.FC<React.PropsWithChildren<EventStepsProps>> = ({
   const stepsConfig = stepsConfigBuilder({ t, eventInfos, userInfos, userStatus, account, theme, cakeBalance })
   const isMintingFinished = userInfos && eventInfos && eventInfos.maxSupply === eventInfos.totalSupplyMinted
   return (
-    <StyledEventStepsSectionContainer justifyContent="center" $isDark={true}>
+    <StyledEventStepsSectionContainer justifyContent="center" $isDark={isDark}>
       <StyledWaveContainer top="-13px">
-        <EventStepsTopWave isDark={true} />
+        <EventStepsTopWave isDark={isDark} />
       </StyledWaveContainer>
       <LandingBodyWrapper flexDirection="column" alignItems="center" py="64px">
         <Text color="invertedContrast" textAlign="center" fontSize="40px" mb="64px" bold>
@@ -80,7 +80,7 @@ const EventStepsSection: React.FC<React.PropsWithChildren<EventStepsProps>> = ({
         <Flex justifyContent="center">
           <StyledBunniesSquadImg src="/images/pancakeSquad/squadRow.png" alt="pancake bunnies squad" />
         </Flex>
-        <EventStepsBottomWave isDark={true} />
+        <EventStepsBottomWave isDark={isDark} />
       </StyledWaveContainer>
     </StyledEventStepsSectionContainer>
   )

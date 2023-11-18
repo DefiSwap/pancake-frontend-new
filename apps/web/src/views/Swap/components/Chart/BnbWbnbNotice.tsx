@@ -11,7 +11,7 @@ interface BnbWbnbNoticeProps {
 const BnbWbnbNotice: React.FC<React.PropsWithChildren<BnbWbnbNoticeProps>> = ({ isDark, isChartExpanded }) => {
   const { t } = useTranslation()
   return (
-    <StyledPriceChart $isDark={true} $isExpanded={isChartExpanded} p="24px">
+    <StyledPriceChart $isDark={isDark} $isExpanded={isChartExpanded} p="24px">
       <Flex justifyContent="center" alignItems="center" height="100%" flexDirection="column">
         <Text mb={['8px', '8px', '0px']} textAlign="center">
           {t('You can swap WBNB for BNB (and vice versa) with no trading fees.')}

@@ -68,7 +68,7 @@ export const Menu = ({ children }: { children: ReactNode }) => {
       chainId={chainId}
       links={menuItems}
       activeItem={activeMenuItem?.href}
-      isDark={true}
+      isDark={isDark}
       
       rightSide={
         <>

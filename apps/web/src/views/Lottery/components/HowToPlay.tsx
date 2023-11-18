@@ -125,13 +125,13 @@ const MatchExampleCard = () => {
             <Text lineHeight="72px" textAlign="right" color="secondary" bold mr="20px">
               {t('A')}
             </Text>
-            <MatchExampleA width={exampleWidth} height="46px" isDark={true} />
+            <MatchExampleA width={exampleWidth} height="46px" isDark={isDark} />
           </Flex>
           <Flex>
             <Text lineHeight="72px" textAlign="right" color="secondary" bold mr="20px">
               {t('B')}
             </Text>
-            <MatchExampleB width={exampleWidth} height="46px" isDark={true} />
+            <MatchExampleB width={exampleWidth} height="46px" isDark={isDark} />
           </Flex>
         </MatchExampleContainer>
       </StepCardInner>

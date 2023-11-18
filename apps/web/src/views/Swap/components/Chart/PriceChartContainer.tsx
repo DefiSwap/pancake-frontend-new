@@ -47,7 +47,7 @@ const PriceChartContainer: React.FC<React.PropsWithChildren<PriceChartContainerP
     WNATIVE[outputCurrency.chainId].equals(outputCurrency.wrapped)
 
   if (isWrap) {
-    return <BnbWbnbNotice isDark={true} isChartExpanded={isChartExpanded} />
+    return <BnbWbnbNotice isDark={isDark} isChartExpanded={isChartExpanded} />
   }
 
   return (
@@ -57,7 +57,7 @@ const PriceChartContainer: React.FC<React.PropsWithChildren<PriceChartContainerP
       inputCurrency={isPairReversed ? outputCurrency : inputCurrency}
       outputCurrency={isPairReversed ? inputCurrency : outputCurrency}
       onSwitchTokens={togglePairReversed}
-      isDark={true}
+      isDark={isDark}
       isChartExpanded={isChartExpanded}
       setIsChartExpanded={setIsChartExpanded}
       isMobile={isMobile}

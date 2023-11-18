@@ -199,7 +199,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
       <Footer
         chainId={chainId}
         items={footerLinks}
-        isDark={true}
+        isDark={isDark}
         toggleTheme={toggleTheme}
         langs={langs}
         setLang={setLang}

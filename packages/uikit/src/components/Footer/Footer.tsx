@@ -23,7 +23,7 @@ import { FooterProps } from "./types";
 
 const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
   items,
-  isDark,
+  isDark=true,
   toggleTheme,
   currentLang,
   langs,

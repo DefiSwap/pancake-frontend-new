@@ -164,21 +164,22 @@ const Hero = () => {
   }, [])
 
   const { drawSequenceImage, playing } = useDrawSequenceImages(
-    `/images/home/lunar-bunny/astronaut-pattie.webm`,
+    '/images/home/lunar-bunny/astronaut-pattie.webm',  // Updated URL
     checkIsIOS() || isMobile ? 70 : 0,
     canvasRef,
     seqInternalRef,
     () => clearInterval(seqInternalRef.current),
     () => {
       if (playing.current === false) {
-        playing.current = true
+        playing.current = true;
         seqInternalRef.current = window.setInterval(() => {
-          drawSequenceImage(500, 500)
-        }, 1000 / 15)
+          drawSequenceImage(500, 500);
+        }, 1000 / 15);
       }
     },
-    true,
-  )
+    true
+  );
+  
 
   return (
     <>

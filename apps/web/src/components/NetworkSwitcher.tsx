@@ -43,7 +43,13 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
       </Box>
       <UserMenuDivider />
       {chains
-        .filter((chain) => chain.id === ChainId.BSC)
+        .filter((chain) => {
+          if (chain.id === chainId) return true
+          if ('testnet' in chain && chain.testnet) {
+            return process.env.NEXT_PUBLIC_VERCEL_ENV !== 'production'
+          }
+          return true
+        })
         .map((chain) => (
           <UserMenuItem
             key={chain.id}
@@ -56,8 +62,9 @@ const NetworkSelect = ({ switchNetwork, chainId }) => {
             </Text>
           </UserMenuItem>
         ))}
+     
     </>
-  );
+  )
 }
 
 const WrongNetworkSelect = ({ switchNetwork, chainId }) => {

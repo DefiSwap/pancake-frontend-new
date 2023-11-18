@@ -19,7 +19,8 @@ const flyingAnim = keyframes`
   }
 `
 
-const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
+const pancakeSwapLogo = 'https://raw.githubusercontent.com/Pattieswap/assets/main/logo.png';
+
 
 const RightWrapper = styled.div`
   position: absolute;

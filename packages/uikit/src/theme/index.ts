@@ -11,7 +11,7 @@ import { vars } from "../css/vars.css";
 
 export interface PancakeTheme {
   siteWidth: number;
-  isDark: boolean;
+  isDark: true;
   alert: AlertTheme;
   colors: typeof vars.colors;
   card: CardTheme;

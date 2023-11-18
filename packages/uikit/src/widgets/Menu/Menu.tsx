@@ -209,7 +209,9 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         buyCakeLink={buyCakeLink}
         mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
       />
-     
+      <AtomBox display={{ xs: "block", md: "none" }}>
+        <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />
+      </AtomBox>
     </MenuContext.Provider>
   );
 };

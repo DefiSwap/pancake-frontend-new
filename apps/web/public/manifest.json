@@ -1,8 +1,8 @@
 {
   "short_name": "PattieSwap",
   "name": "PattieSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "description": "Farm PATC with Pattie LP Tokens",
+  "homepage_url": "https://pattieswap.finance",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#FF720D",

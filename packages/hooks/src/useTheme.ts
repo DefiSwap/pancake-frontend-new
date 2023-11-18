@@ -4,14 +4,14 @@ import { ThemeContext as StyledThemeContext } from 'styled-components'
 import { useTheme as useNextTheme } from 'next-themes'
 
 export const COOKIE_THEME_KEY = 'theme'
-export const THEME_DOMAIN = '.pancakeswap.finance'
+export const THEME_DOMAIN = '.pattieswap.finance'
 
 const useTheme = () => {
   const { resolvedTheme, setTheme } = useNextTheme()
   const theme = useContext(StyledThemeContext)!
 
   const handleSwitchTheme = useCallback(
-    (themeValue: 'light' | 'dark') => {
+    (themeValue: 'dark') => {
       try {
         setTheme(themeValue)
         Cookie.set(COOKIE_THEME_KEY, themeValue, { domain: THEME_DOMAIN })

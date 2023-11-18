@@ -23,7 +23,7 @@ export const livePools: SerializedPool[] = [
 }))
 
 // known finished pools
-const finishedPools = [
+ /* const finishedPools = [
  
   {
     sousId: 346,
@@ -44,5 +44,5 @@ const finishedPools = [
   stakingToken: p.stakingToken.serialize,
   earningToken: p.earningToken.serialize,
 }))
-
-export const pools: SerializedPool[] = [...livePools, ...finishedPools]
+ */
+export const pools: SerializedPool[] = [...livePools]

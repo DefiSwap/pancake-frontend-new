@@ -180,12 +180,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
               />
 
               {subLinksMobileOnly && subLinksMobileOnly?.length > 0 && (
-                <SubMenuItems
-                  items={subLinksMobileOnly}
-                  mt={`${totalTopMenuHeight + 1}px`}
-                  activeItem={activeSubItem}
-                  isMobileOnly
-                />
+                
               )}
             </Flex>
           ) : (
@@ -207,7 +202,7 @@ const Menu: React.FC<React.PropsWithChildren<NavProps>> = ({
         cakePriceUsd={cakePriceUsd}
         buyCakeLabel={buyCakeLabel}
         buyCakeLink={buyCakeLink}
-       
+        mb={[`${MOBILE_MENU_HEIGHT}px`, null, "0px"]}
       />
       <AtomBox display={{ xs: "block", md: "none" }}>
         <BottomNav items={links} activeItem={activeItem} activeSubItem={activeSubItem} />

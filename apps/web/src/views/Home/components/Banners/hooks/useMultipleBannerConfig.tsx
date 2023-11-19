@@ -43,7 +43,10 @@ export const useMultipleBannerConfig = () => {
       { shouldRender: true, banner: <OpBnbBanner /> },
       { shouldRender: true, banner: <BaseBanner /> },
       
-    
+      {
+        shouldRender: false,
+        banner: <IFOBanner />,
+      },
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [
@@ -64,7 +67,7 @@ export const useMultipleBannerConfig = () => {
       ...shuffle(SHUFFLE_BANNERS),
       {
         // be the last one if harvest value is zero
-        shouldRender: false
+        shouldRender: false,
         banner: <UserBanner />,
       },
     ]

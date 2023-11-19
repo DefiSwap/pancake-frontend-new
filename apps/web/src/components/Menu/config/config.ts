@@ -93,14 +93,20 @@ const config: (
     {
       label: t('Pattiepad'),
       href: 'https://pattiepad.com',
-      supportChainIds: SUPPORT_ONLY_BSC,
+      
+      
+    },
+    {
+      label: t('Perpetual'),
+      href: 'https://perp.pattieswap.finance',
+      
       
     },
 
     {
       label: t('Analytics'),
       href: '/info',
-      supportChainIds: SUPPORT_ONLY_BSC,
+      
       
     },
    

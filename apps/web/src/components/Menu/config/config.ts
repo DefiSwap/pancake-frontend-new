@@ -94,6 +94,7 @@ const config: (
       label: t('Pattiepad'),
       href: 'https://pattiepad.com',
       supportChainIds: SUPPORT_ONLY_BSC,
+<<<<<<< HEAD
       
     },
 
@@ -101,6 +102,8 @@ const config: (
       label: t('Perpetual'),
       href: 'https://pattiepad.com',
       supportChainIds: SUPPORT_ONLY_BSC,
+=======
+>>>>>>> parent of 735c3c98e (Update config.ts)
       
     },
 

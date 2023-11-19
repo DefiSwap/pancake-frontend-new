@@ -92,7 +92,7 @@ const config: (
    
     {
       label: t('Perpetual'),
-      href: 'https://perp.pattie.finance',
+      href: 'https://perp.pattieswap.finance',
       
       
     },

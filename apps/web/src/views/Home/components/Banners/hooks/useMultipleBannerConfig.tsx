@@ -42,11 +42,7 @@ export const useMultipleBannerConfig = () => {
       { shouldRender: true, banner: <GameBanner /> },
       { shouldRender: true, banner: <OpBnbBanner /> },
       { shouldRender: true, banner: <BaseBanner /> },
-      
-      {
-        shouldRender: isRenderIFOBanner,
-        banner: <IFOBanner />,
-      },
+    
     ]
 
     const SHUFFLE_BANNERS: IBannerConfig[] = [

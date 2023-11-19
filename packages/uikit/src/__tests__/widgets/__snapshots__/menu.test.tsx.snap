@@ -1154,7 +1154,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c26"
-              href="https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
+              href='https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56'
               target="_blank"
             >
               <svg
@@ -3154,7 +3154,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               class="c49"
-              href="https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
+              href='https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56'
               target="_blank"
             >
               <svg
@@ -3218,7 +3218,7 @@ exports[`renders correctly 1`] = `
           <a
             class="c52"
             data-theme="dark"
-            href="https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56"
+            href='https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56'
             scale="sm"
             target="_blank"
             variant="primary"

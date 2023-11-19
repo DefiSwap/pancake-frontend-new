@@ -1,6 +1,5 @@
 import { ContextApi } from '@pancakeswap/localization'
 import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
-import { SUPPORTED_CHAIN_IDS as POSITION_MANAGERS_SUPPORTED_CHAINS } from '@pancakeswap/position-managers'
 import { SUPPORTED_CHAIN_IDS as IFO_SUPPORTED_CHAINS } from '@pancakeswap/ifos'
 import {
   NftIcon,
@@ -16,14 +15,11 @@ import {
   SwapIcon,
 } from '@pancakeswap/uikit'
 import {
-  FIXED_STAKING_SUPPORTED_CHAINS,
-  LIQUID_STAKING_SUPPORTED_CHAINS,
-  SUPPORT_BUY_CRYPTO,
+
   SUPPORT_FARMS,
   SUPPORT_ONLY_BSC,
 } from 'config/constants/supportChains'
-import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
+
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -65,37 +61,7 @@ const config: (
           label: t('Liquidity'),
           href: '/liquidity',
         },
-        {
-          label: t('Perpetual'),
-          href: getPerpetualUrl({
-            chainId,
-            languageCode,
-            isDark,
-          }),
-          confirmModalId: 'usCitizenConfirmModal',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('Bridge'),
-          href: 'https://bridge.pancakeswap.finance/',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: `${t('Limit')} (V2)`,
-          href: '/limit-orders',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/3d-coin.png',
-        },
-        {
-          label: t('Buy Crypto'),
-          href: '/buy-crypto',
-          supportChainIds: SUPPORT_BUY_CRYPTO,
-        },
-        {
-          label: t('Trading Reward'),
-          href: '/trading-reward',
-          hideSubNav: true,
-        },
+      
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -116,25 +82,11 @@ const config: (
           href: '/pools',
           supportChainIds: POOL_SUPPORTED_CHAINS,
         },
-        {
-          label: t('Position Manager'),
-          href: '/position-managers',
-          supportChainIds: POSITION_MANAGERS_SUPPORTED_CHAINS,
-        },
-        {
-          label: t('Liquid Staking'),
-          href: '/liquid-staking',
-          supportChainIds: LIQUID_STAKING_SUPPORTED_CHAINS,
-        },
-        {
-          label: t('Simple Staking'),
-          href: '/simple-staking',
-          supportChainIds: FIXED_STAKING_SUPPORTED_CHAINS,
-        },
+       
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Game'),
+      label: t('Pattie Ecosystem'),
       icon: PancakeProtectorIcon,
       hideSubNav: true,
       href: 'https://pancakeswap.games/',

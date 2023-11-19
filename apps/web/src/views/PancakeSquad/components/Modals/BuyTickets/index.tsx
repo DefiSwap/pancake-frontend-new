@@ -100,7 +100,7 @@ const BuyTicketsModal: React.FC<React.PropsWithChildren<BuyTicketsModalProps>> =
             </Flex>
             <Flex mb="8px" justifyContent="space-between">
               <Text font-size="14px" color="textSubtle">
-                {t('Your CAKE Balance')}
+                {t('Your PATTIE Balance')}
               </Text>
               <Text font-size="14px" color={isCakeBalanceInsufficient ? 'failure' : 'text'}>
                 {formatBigInt(cakeBalance, 3)} CAKE

@@ -202,7 +202,7 @@ const Hero = () => {
       <BgWrapper>
         <InnerWrapper>
           <SlideSvgDark className="slide-svg-dark" width="100%" />
-          <SlideSvgLight className="slide-svg-light" width="100%" />
+          <SlideSvgLight className="slide-svg-dark" width="100%" />
         </InnerWrapper>
       </BgWrapper>
       <Flex

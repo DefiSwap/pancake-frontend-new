@@ -41,7 +41,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pattieswap.finance'
+const domain = 'https://pattieswap.com'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()

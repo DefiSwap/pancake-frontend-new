@@ -91,12 +91,7 @@ export const useBCakeTooltipContent = () => {
           'Yield Boosters allow you to boost your farming yields by locking PATTIE in the fixed-term staking PATTIE pool. The more PATTIE you lock, and the longer you lock them, the higher the boost you will receive.',
         )}
       </Box>
-      <Box>
-        {t('To learn more, check out the')}
-        <Link target="_blank" href="https://medium.com/pancakeswap/introducing-bcake-farm-yield-boosters-b27b7a6f0f84">
-          {t('Medium Article')}
-        </Link>
-      </Box>
+     
     </>
   )
   return tooltipContent

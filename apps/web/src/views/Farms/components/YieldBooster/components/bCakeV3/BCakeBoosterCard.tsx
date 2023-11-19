@@ -88,7 +88,7 @@ export const useBCakeTooltipContent = () => {
     <>
       <Box mb="20px">
         {t(
-          'Yield Boosters allow you to boost your farming yields by locking CAKE in the fixed-term staking CAKE pool. The more CAKE you lock, and the longer you lock them, the higher the boost you will receive.',
+          'Yield Boosters allow you to boost your farming yields by locking PATTIE in the fixed-term staking PATTIE pool. The more PATTIE you lock, and the longer you lock them, the higher the boost you will receive.',
         )}
       </Box>
       <Box>

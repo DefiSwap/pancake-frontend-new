@@ -194,7 +194,7 @@ const Hero = () => {
           [data-theme='dark'] .slide-svg-dark {
             display: block;
           }
-          [data-theme='dark'] .slide-svg-light {
+          [data-theme='light'] .slide-svg-light {
             display: none;
           }
         `}

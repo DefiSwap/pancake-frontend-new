@@ -11,7 +11,7 @@ export type FooterProps = {
   buyCakeLabel: string;
   buyCakeLink: string;
   isDark: boolean;
-  toggleTheme: () => void;
+  toggleTheme: (isDark: boolean) => void;
   cakePriceUsd?: number;
   currentLang: string;
   langs: Language[];

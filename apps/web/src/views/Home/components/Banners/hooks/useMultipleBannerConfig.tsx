@@ -42,6 +42,7 @@ export const useMultipleBannerConfig = () => {
       { shouldRender: true, banner: <GameBanner /> },
       { shouldRender: true, banner: <OpBnbBanner /> },
       { shouldRender: true, banner: <BaseBanner /> },
+      
     
     ]
 
@@ -63,7 +64,7 @@ export const useMultipleBannerConfig = () => {
       ...shuffle(SHUFFLE_BANNERS),
       {
         // be the last one if harvest value is zero
-        shouldRender: isRenderUserBanner.shouldRender && isRenderUserBanner.isEarningsBusdZero,
+        shouldRender: false
         banner: <UserBanner />,
       },
     ]

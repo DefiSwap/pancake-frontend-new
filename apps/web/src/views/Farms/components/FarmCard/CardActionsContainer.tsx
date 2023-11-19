@@ -42,7 +42,7 @@ const CardActions: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = ({
           PATTIE
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-          {t('Earned')}
+          {t('Eaed')}
         </Text>
       </Flex>
       {shouldUseProxyFarm ? (

@@ -695,20 +695,12 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
     v1pid: 0,
-    lpSymbol: 'CAKE',
+    lpSymbol: 'PATTIE',
     lpAddress: '0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D',
-    token: bscTokens.syrup,
+    token: bscTokens.cake,
     quoteToken: bscTokens.wbnb,
   },
-  {
-    pid: 2,
-    v1pid: 251,
-    lpSymbol: 'PATC-WBNB LP',
-    lpAddress: CAKE_BNB_LP_MAINNET,
-    token: bscTokens.patc,
-    quoteToken: bscTokens.wbnb,
-    boosted: true,
-  },
+  
   
 ].map((p) => ({
   ...p,

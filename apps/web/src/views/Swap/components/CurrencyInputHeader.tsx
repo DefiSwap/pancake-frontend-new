@@ -119,9 +119,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 display="flex"
                 style={{ justifyContent: 'center' }}
               >
-                <InternalLink href="/buy-crypto">
-                  <Image src={BuyCryptoIcon} alt="#" style={{ justifyContent: 'center' }} />
-                </InternalLink>
+               
               </TooltipText>
               {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}
             </Flex>

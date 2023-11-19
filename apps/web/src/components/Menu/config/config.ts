@@ -1,6 +1,5 @@
 import { ContextApi } from '@pancakeswap/localization'
 import { SUPPORTED_CHAIN_IDS as POOL_SUPPORTED_CHAINS } from '@pancakeswap/pools'
-import { SUPPORTED_CHAIN_IDS as IFO_SUPPORTED_CHAINS } from '@pancakeswap/ifos'
 import {
   NftIcon,
   NftFillIcon,
@@ -15,11 +14,14 @@ import {
   SwapIcon,
 } from '@pancakeswap/uikit'
 import {
-
+  FIXED_STAKING_SUPPORTED_CHAINS,
+  LIQUID_STAKING_SUPPORTED_CHAINS,
+  SUPPORT_BUY_CRYPTO,
   SUPPORT_FARMS,
   SUPPORT_ONLY_BSC,
 } from 'config/constants/supportChains'
-
+import { getPerpetualUrl } from 'utils/getPerpetualUrl'
+import { nftsBaseUrl } from 'views/Nft/market/constants'
 
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
@@ -62,6 +64,7 @@ const config: (
           href: '/liquidity',
         },
       
+       
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
@@ -83,109 +86,31 @@ const config: (
           supportChainIds: POOL_SUPPORTED_CHAINS,
         },
        
+       
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+   
     {
-      label: t('Pattie Ecosystem'),
-      icon: PancakeProtectorIcon,
-      hideSubNav: true,
-      href: 'https://pancakeswap.games/',
-      items: [
-        {
-          label: t('Gaming Marketplace'),
-          href: 'https://pancakeswap.games/',
-          status: { text: t('New'), color: 'success' },
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('Prediction (BETA)'),
-          href: '/prediction',
-          image: '/images/decorations/prediction.png',
-        },
-        {
-          label: t('Lottery'),
-          href: '/lottery',
-          image: '/images/decorations/lottery.png',
-        },
-        {
-          label: t('Pottery (BETA)'),
-          href: '/pottery',
-          image: '/images/decorations/lottery.png',
-        },
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
-    {
-      label: t('NFT'),
-      href: `${nftsBaseUrl}`,
-      icon: NftIcon,
-      fillIcon: NftFillIcon,
+      label: t('Pattiepad'),
+      href: 'https://pattiepad.com',
       supportChainIds: SUPPORT_ONLY_BSC,
-      image: '/images/decorations/nft.png',
-      items: [
-        {
-          label: t('Overview'),
-          href: `${nftsBaseUrl}`,
-        },
-        {
-          label: t('Collections'),
-          href: `${nftsBaseUrl}/collections`,
-        },
-        {
-          label: t('Activity'),
-          href: `${nftsBaseUrl}/activity`,
-        },
-      ],
+      
     },
+
     {
-      label: '',
-      href: '/info',
-      icon: MoreIcon,
-      hideSubNav: true,
-      items: [
-        {
-          label: t('Info'),
-          href: '/info/v3',
-        },
-        {
-          label: t('IFO'),
-          href: '/ifo',
-          supportChainIds: IFO_SUPPORTED_CHAINS,
-          image: '/images/ifos/ifo-bunny.png',
-        },
-        {
-          label: t('Affiliate Program'),
-          href: '/affiliates-program',
-        },
-        {
-          label: t('Voting'),
-          href: '/voting',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/voting/voting-bunny.png',
-        },
-        {
-          type: DropdownMenuItemType.DIVIDER,
-        },
-        {
-          label: t('Leaderboard'),
-          href: '/teams',
-          supportChainIds: SUPPORT_ONLY_BSC,
-          image: '/images/decorations/leaderboard.png',
-        },
-        {
-          type: DropdownMenuItemType.DIVIDER,
-        },
-        {
-          label: t('Blog'),
-          href: 'https://blog.pancakeswap.finance',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-        {
-          label: t('Docs'),
-          href: 'https://docs.pancakeswap.finance',
-          type: DropdownMenuItemType.EXTERNAL_LINK,
-        },
-      ].map((item) => addMenuItemSupported(item, chainId)),
+      label: t('Perpetual'),
+      href: 'https://pattiepad.com',
+      supportChainIds: SUPPORT_ONLY_BSC,
+      
     },
+
+    {
+      label: t('Analytics'),
+      href: '/info',
+      supportChainIds: SUPPORT_ONLY_BSC,
+      
+    },
+   
   ].map((item) => addMenuItemSupported(item, chainId))
 
 export default config

@@ -39,32 +39,32 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       <style jsx global>
         {`
           #home-1 .page-bg {
-            background: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
+            background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
           }
           [data-theme='dark'] #home-1 .page-bg {
             background: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
           }
           #home-2 .page-bg {
-            background: linear-gradient(180deg, #FF720D 22%, #d7caec 100%);
+            background: linear-gradient(180deg, #09070c 22%, #201335 100%);
           }
           [data-theme='dark'] #home-2 .page-bg {
             background: linear-gradient(180deg, #09070c 22%, #201335 100%);
           }
           #home-3 .page-bg {
-            background: linear-gradient(180deg, #6fb6f1 0%, #eaf2f6 100%);
+            background: linear-gradient(180deg, #0b4576 0%, #091115 100%);
           }
           [data-theme='dark'] #home-3 .page-bg {
             background: linear-gradient(180deg, #0b4576 0%, #091115 100%);
           }
           #home-4 .inner-wedge svg {
-            fill: #d8cbed;
+            fill: #201335;
           }
           [data-theme='dark'] #home-4 .inner-wedge svg {
             fill: #201335;
           }
 
           #bottom-wedge4-2 svg {
-            fill: #72b8f2;
+            fill: #0b4576;
           }
           [data-theme='dark'] #bottom-wedge4-2 svg {
             fill: #0b4576;

@@ -120,7 +120,7 @@ const CurrencyInputHeader: React.FC<React.PropsWithChildren<Props>> = memo(
                 style={{ justifyContent: 'center' }}
               >
                 <InternalLink href="">
-                 
+                  <Image  alt="#" style={{ justifyContent: 'center' }} />
                 </InternalLink>
               </TooltipText>
               {buyCryptoTooltipVisible && (!isMobile || mobileTooltipShow) && buyCryptoTooltip}

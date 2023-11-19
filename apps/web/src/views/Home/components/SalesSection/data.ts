@@ -56,7 +56,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
   ),
   reverse: false,
   primaryButton: {
-    to: 'https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56',
+    to: '/swap',
     text: t('Buy Pattie'),
     external: false,
   },

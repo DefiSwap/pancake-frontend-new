@@ -426,7 +426,7 @@ const CakeSection: React.FC = () => {
         </Text>
       </Flex>
       <Flex justifyContent="center" style={{ gap: 14 }}>
-        <Link href='https://plot-ready-production.vercel.app/swap?outputCurrency=0x0eE4024E8d5ae9afFCe26f692028407dD2050B7D&chainId=56'>
+        <Link href='/swap'>
           <Button variant="primary">{t('Buy Pattie')}</Button>
         </Link>
         

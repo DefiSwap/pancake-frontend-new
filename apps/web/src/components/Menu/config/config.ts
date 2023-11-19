@@ -22,10 +22,12 @@ import {
 } from 'config/constants/supportChains'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
 import { nftsBaseUrl } from 'views/Nft/market/constants'
+
 export type ConfigMenuDropDownItemsType = DropdownMenuItems & { hideSubNav?: boolean }
 export type ConfigMenuItemsType = Omit<MenuItemsType, 'items'> & { hideSubNav?: boolean; image?: string } & {
   items?: ConfigMenuDropDownItemsType[]
 }
+
 const addMenuItemSupported = (item, chainId) => {
   if (!chainId || !item.supportChainIds) {
     return item
@@ -38,6 +40,7 @@ const addMenuItemSupported = (item, chainId) => {
     disabled: true,
   }
 }
+
 const config: (
   t: ContextApi['t'],
   isDark: boolean,
@@ -90,13 +93,23 @@ const config: (
     {
       label: t('Pattiepad'),
       href: 'https://pattiepad.com',
+      
+      
     },
     {
       label: t('Perpetual'),
       href: 'https://perp.pattieswap.finance',
+      
+      
     },
 
+    {
+      label: t('Analytics'),
+      href: '/info',
+      
+      
+    },
+   
   ].map((item) => addMenuItemSupported(item, chainId))
 
-  
-  export default config
+export default config

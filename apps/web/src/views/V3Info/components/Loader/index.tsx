@@ -78,7 +78,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src="https://assets.pancakeswap.finance/web/pancake-3d-spinner-v2.gif" alt="loading-icon" />
+        <img src="https://raw.githubusercontent.com/Pattieswap/assets/main/logo.png" alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )

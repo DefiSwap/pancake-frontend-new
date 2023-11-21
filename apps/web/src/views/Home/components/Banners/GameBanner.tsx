@@ -149,7 +149,7 @@ const GameBanner = () => {
                 </GradientText>
                 {currentLanguage.code === 'en' ? (
                   <Box m="4px 4px 0 0">
-                    <Image src={gameText} alt="gameText" width={177} height={19} placeholder="blur" />
+                    <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/game-text.png" alt="gameText" width={177} height={19} placeholder="blur" />
                   </Box>
                 ) : (
                   <>
@@ -187,14 +187,14 @@ const GameBanner = () => {
           </Link>
         </S.LeftWrapper>
         <RightWrapper>
-          <Image src={gameCube} alt="gameCube" width={52} height={52} placeholder="blur" />
+          <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/game-cube.png" alt="gameCube" width={52} height={52} placeholder="blur" />
           {isDesktop ? (
-            <Image src={gameDesktopBunny} alt="gameDesktopBunny" width={264.5} height={192} placeholder="blur" />
+            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/game-desktop-bunny.png" alt="gameDesktopBunny" width={264.5} height={192} placeholder="blur" />
           ) : (
-            <Image src={gameMobileBunny} alt="gameMobileBunny" width={338} height={176} placeholder="blur" />
+            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/game-mobile-bunny.png" alt="gameMobileBunny" width={338} height={176} placeholder="blur" />
           )}
           <BgWrapper>
-            {isDesktop && <Image src={gameDesktopBg} alt="gameBg" width={1126} height={192} placeholder="blur" />}
+            {isDesktop && <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/game-desktop-bunny.png" alt="gameBg" width={1126} height={192} placeholder="blur" />}
           </BgWrapper>
         </RightWrapper>
       </S.Inner>

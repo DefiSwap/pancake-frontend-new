@@ -152,11 +152,11 @@ export const RightImageWrapper = styled.div`
 export const RightTopBox: React.FC = () => {
   return (
     <RightImageWrapper>
-      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
-      <Image className="ring" src={ring} alt="ring" />
-      <Image className="heart" src={heart} alt="heart" />
-      <Image className="speaker" src={speaker} alt="speaker" />
-      <Image className="yellowBubble" src={yellowBubble} alt="yellowBubble" />
+      <Image className="pinkBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/1.png" alt="pinkBubble" />
+      <Image className="ring" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/2.png" alt="ring" />
+      <Image className="heart" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/3.png" alt="heart" />
+      <Image className="speaker" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/4.png" alt="speaker" />
+      <Image className="yellowBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/5.png" alt="yellowBubble" />
     </RightImageWrapper>
   )
 }
@@ -164,8 +164,8 @@ export const RightTopBox: React.FC = () => {
 export const RightBottomBox: React.FC = () => {
   return (
     <RightShadowWrapper>
-      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
-      <Image className="ring" src={ring} alt="ring" />
+      <Image className="pinkBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/1.png" alt="pinkBubble" />
+      <Image className="ring" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/2.png" alt="ring" />
     </RightShadowWrapper>
   )
 }
@@ -173,10 +173,10 @@ export const RightBottomBox: React.FC = () => {
 export const LeftBottomBox: React.FC = () => {
   return (
     <LeftImageWrapper>
-      <Image className="discord" src={discord} alt="discord" />
-      <Image className="twitter" src={twitter} alt="twitter" />
-      <Image className="telegram" src={telegram} alt="telegram" />
-      <Image className="instagram" src={instagram} alt="instagram" />
+      <Image className="discord" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/1.png" alt="discord" />
+      <Image className="twitter" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/2.png" alt="twitter" />
+      <Image className="telegram" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/3.png" alt="telegram" />
+      <Image className="instagram" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/4.png" alt="instagram" />
     </LeftImageWrapper>
   )
 }

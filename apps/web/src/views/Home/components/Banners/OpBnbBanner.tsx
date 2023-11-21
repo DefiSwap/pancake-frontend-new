@@ -147,10 +147,10 @@ export const OpBnbBanner = memo(() => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src={opbnbBunny} alt="opbnbBunny" width={172} height={200} placeholder="blur" />
+              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/PattieBar.png" alt="opbnbBunny" width={172} height={200} placeholder="blur" />
             </>
           ) : (
-            <Image src={opbnbBunny} alt="opbnbBunny" width={151} height={176} placeholder="blur" />
+            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/PattieBar.png" alt="opbnbBunny" width={151} height={176} placeholder="blur" />
           )}
          
         </RightWrapper>

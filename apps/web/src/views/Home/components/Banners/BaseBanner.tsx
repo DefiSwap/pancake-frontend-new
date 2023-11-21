@@ -154,20 +154,20 @@ const BaseBanner = () => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src={baseBunny} alt="baseBunny" width={218} height={203} placeholder="blur" />
-              <Image src={baseMoon} alt="baseMoon" width={123} height={94} placeholder="blur" />
+              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/mousefuse.png" alt="baseBunny" width={218} height={203} placeholder="blur" />
+              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-moon.png" alt="baseMoon" width={123} height={94} placeholder="blur" />
             </>
           ) : (
-            <Image src={baseBunny} alt="baseBunny" width={196} height={182} placeholder="blur" />
+            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/mousefuse.png" alt="baseBunny" width={196} height={182} placeholder="blur" />
           )}
           <BgWrapper>
             {isDesktop ? (
               <>
-                <Image src={baseBg} alt="baseBg" width={624} height={192} placeholder="blur" />
-                <Image src={baseTree} alt="baseTree" width={149} height={150} placeholder="blur" />
+                <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-bg.png" alt="baseBg" width={624} height={192} placeholder="blur" />
+                <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-tree.png" alt="baseTree" width={149} height={150} placeholder="blur" />
               </>
             ) : (
-              <Image src={baseBgMobile} alt="baseBgMobile" width={316} height={176} placeholder="blur" />
+              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-bg-mobile.png" alt="baseBgMobile" width={316} height={176} placeholder="blur" />
             )}
           </BgWrapper>
         </RightWrapper>

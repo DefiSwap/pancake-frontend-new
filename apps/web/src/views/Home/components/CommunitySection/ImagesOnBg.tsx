@@ -156,11 +156,11 @@ export const RightImageWrapper = styled.div`
 export const RightTopBox: React.FC = () => {
   return (
     <RightImageWrapper>
-      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
-      <Image className="ring" src={ring} alt="ring" />
-      <Image className="heart" src={heart} alt="heart" />
-      <Image className="speaker" src={speaker} alt="speaker" />
-      <Image className="yellowBubble" src={yellowBubble} alt="yellowBubble" />
+      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" unoptimized/>
+      <Image className="ring" src={ring} alt="ring" unoptimized/>
+      <Image className="heart" src={heart} alt="heart" unoptimized/>
+      <Image className="speaker" src={speaker} alt="speaker" unoptimized/>
+      <Image className="yellowBubble" src={yellowBubble} alt="yellowBubble"  unoptimized/>
     </RightImageWrapper>
   )
 }
@@ -168,8 +168,8 @@ export const RightTopBox: React.FC = () => {
 export const RightBottomBox: React.FC = () => {
   return (
     <RightShadowWrapper>
-      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
-      <Image className="ring" src={ring} alt="ring" />
+      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" unoptimized />
+      <Image className="ring" src={ring} alt="ring"  unoptimized/>
     </RightShadowWrapper>
   )
 }
@@ -177,10 +177,10 @@ export const RightBottomBox: React.FC = () => {
 export const LeftBottomBox: React.FC = () => {
   return (
     <LeftImageWrapper>
-      <Image className="discord" src={discord} alt="discord" />
-      <Image className="twitter" src={twitter} alt="twitter" />
-      <Image className="telegram" src={telegram} alt="telegram" />
-      <Image className="instagram" src={instagram} alt="instagram" />
+      <Image className="discord" src={discord} alt="discord" unoptimized />
+      <Image className="twitter" src={twitter} alt="twitter" unoptimized/>
+      <Image className="telegram" src={telegram} alt="telegram" unoptimized/>
+      <Image className="instagram" src={instagram} alt="instagram" unoptimized/>
     </LeftImageWrapper>
   )
 }

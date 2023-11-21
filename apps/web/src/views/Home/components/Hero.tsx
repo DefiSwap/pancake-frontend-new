@@ -164,7 +164,7 @@ const Hero = () => {
   }, [])
 
   const { drawSequenceImage, playing } = useDrawSequenceImages(
-    'https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm',
+    'https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm ' unoptimized,
     checkIsIOS() || isMobile ? 70 : 0,
     canvasRef,
     seqInternalRef,
@@ -276,7 +276,7 @@ const Hero = () => {
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>
-                  <source src="https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm" type="video/webm" />
+                  <source src="https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm" type="video/webm" unoptimized/>
 
                   </CakeVideo>
                   <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>

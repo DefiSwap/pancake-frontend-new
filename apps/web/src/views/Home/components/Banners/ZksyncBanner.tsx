@@ -5,7 +5,7 @@ import { styled, css } from 'styled-components'
 
 import { ASSET_CDN } from 'config/constants/endpoints'
 
-import { zkSyncBg, zkSyncBunny, zkSyncBgMobile, eraLogo } from './images'
+import { zkSyncBg, zkSyncBunny, zkSyncBgMobile, eraLogo } from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`

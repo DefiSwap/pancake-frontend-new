@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import CommunitySummary, { sharedCss } from './CommunitySummary'
 import { CommunityTags } from './CommunityTags'
 import { BlogCard, TwitterCards } from './TwitterCards'
-import { LeftBottomBox, RightBottomBox } from './ImagesOnBg'
+import { LeftBottomBox, RightBottomBox } from '../../../../../public/inside/imagesOnBg'
 
 const TransparentFrame = styled.div<{ isDark: boolean }>`
   position: relative;

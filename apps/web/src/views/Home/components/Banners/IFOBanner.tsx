@@ -7,7 +7,7 @@ import { memo, useEffect, useRef } from 'react'
 import { useChainCurrentBlock } from 'state/block/hooks'
 import { styled, keyframes } from 'styled-components'
 import { getStatus } from '../../../Ifos/hooks/helpers'
-import { IFOImage, IFOMobileImage } from './images'
+import { IFOImage, IFOMobileImage } from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const IFOHeaderMobileLimitHeight = 36

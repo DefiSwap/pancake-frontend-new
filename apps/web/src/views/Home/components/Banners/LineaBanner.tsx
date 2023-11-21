@@ -5,7 +5,7 @@ import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
-import { lineaBunny, lineaBgMobile, lineaBunnyMobile, lineaBg, lineaLogo } from './images'
+import { lineaBunny, lineaBgMobile, lineaBunnyMobile, lineaBg, lineaLogo } from '../../../../../public/inside/images'
 import { flyingAnim } from './animations'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`

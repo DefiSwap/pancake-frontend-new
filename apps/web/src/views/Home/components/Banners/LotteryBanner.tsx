@@ -21,7 +21,7 @@ import getTimePeriods from '@pancakeswap/utils/getTimePeriods'
 import Timer from 'views/Lottery/components/Countdown/Timer'
 import useGetNextLotteryEvent from 'views/Lottery/hooks/useGetNextLotteryEvent'
 import useNextEventCountdown from './hooks/useNextEventCountdown'
-import { lotteryImage, lotteryMobileImage } from './images'
+import { lotteryImage, lotteryMobileImage } from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const RightWrapper = styled.div`

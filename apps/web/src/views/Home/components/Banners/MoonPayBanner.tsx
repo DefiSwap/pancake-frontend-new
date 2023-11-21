@@ -5,7 +5,7 @@ import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
-import { moonpayBg, moonpayBgMobile, moonpayCash, mercuryoLogo } from './images'
+import { moonpayBg, moonpayBgMobile, moonpayCash, mercuryoLogo } from '../../../../../public/inside/images'
 import { flyingAnim } from './animations'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`

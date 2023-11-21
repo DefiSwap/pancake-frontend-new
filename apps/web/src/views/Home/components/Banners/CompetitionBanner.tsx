@@ -3,7 +3,7 @@ import { useTranslation } from '@pancakeswap/localization'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
-import { modImage, modMobileImage, modWhiteLogo } from './images'
+import { modImage, modMobileImage, modWhiteLogo } from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const RightWrapper = styled.div`

@@ -5,7 +5,7 @@ import { styled, css } from 'styled-components'
 
 import { ASSET_CDN } from 'config/constants/endpoints'
 
-import { polygonZkBunny, polygonZkBgMobile, polygonZkBg } from './images'
+import { polygonZkBunny, polygonZkBgMobile, polygonZkBg } from '../../../../../public/inside/images'
 import * as S from './Styled'
 import { flyingAnim } from './animations'
 

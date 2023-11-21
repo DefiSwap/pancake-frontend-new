@@ -17,7 +17,7 @@ import {
   TradingRewardBunny,
   TradingRewardBg,
   TradingRewardButter2,
-} from './images'
+} from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const flyingAnim = keyframes`

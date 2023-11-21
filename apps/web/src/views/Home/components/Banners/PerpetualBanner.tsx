@@ -15,7 +15,7 @@ import Image from 'next/legacy/image'
 import { memo, useMemo, useRef } from 'react'
 import { styled, useTheme } from 'styled-components'
 import { getPerpetualUrl } from 'utils/getPerpetualUrl'
-import { perpetualImage, perpetualMobileImage } from './images'
+import { perpetualImage, perpetualMobileImage } from '../../../../../public/inside/images'
 import * as S from './Styled'
 
 const RightWrapper = styled.div`

@@ -94,7 +94,6 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
                 }
               }}
 
-              unoptimized
             />
             <SpeechBubble>{warningTextComponent}</SpeechBubble>
           </InnerContainer>

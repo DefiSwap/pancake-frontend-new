@@ -158,7 +158,7 @@ const GameBanner = () => {
                 </GradientText>
                 {currentLanguage.code === 'en' ? (
                   <Box m="4px 4px 0 0">
-                    <Image src={gameText} alt="gameText" width={177} height={19} placeholder="blur" />
+                    <Image src={gameText} alt="gameText" width={177} height={19}  />
                   </Box>
                 ) : (
                   <>
@@ -176,7 +176,7 @@ const GameBanner = () => {
               <>
                 {currentLanguage.code === 'en' ? (
                   <Box mt="8px">
-                    <Image src={gameMobileText} alt="gameMobileText" width={84} height={20} placeholder="blur" />
+                    <Image src={gameMobileText} alt="gameMobileText" width={84} height={20}  />
                   </Box>
                 ) : (
                   <Text fontSize={20} bold color="#05FFC3">
@@ -196,14 +196,14 @@ const GameBanner = () => {
           </Link>
         </S.LeftWrapper>
         <RightWrapper>
-          <Image src={gameCube} alt="gameCube" width={52} height={52} placeholder="blur" />
+          <Image src={gameCube} alt="gameCube" width={52} height={52}  />
           {isDesktop ? (
-            <Image src={gameDesktopBunny} alt="gameDesktopBunny" width={264.5} height={192} placeholder="blur" />
+            <Image src={gameDesktopBunny} alt="gameDesktopBunny" width={264.5} height={192}  />
           ) : (
-            <Image src={gameMobileBunny} alt="gameMobileBunny" width={338} height={176} placeholder="blur" />
+            <Image src={gameMobileBunny} alt="gameMobileBunny" width={338} height={176}  />
           )}
           <BgWrapper>
-            {isDesktop && <Image src={gameDesktopBg} alt="gameBg" width={1126} height={192} placeholder="blur" />}
+            {isDesktop && <Image src={gameDesktopBg} alt="gameBg" width={1126} height={192}  />}
           </BgWrapper>
         </RightWrapper>
       </S.Inner>

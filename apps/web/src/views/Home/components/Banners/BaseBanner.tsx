@@ -159,20 +159,20 @@ const BaseBanner = () => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src={baseBunny} alt="baseBunny" width={218} height={203} placeholder="blur" />
-              <Image src={baseMoon} alt="baseMoon" width={123} height={94} placeholder="blur" />
+              <Image src={baseBunny} alt="baseBunny" width={218} height={203}  />
+              <Image src={baseMoon} alt="baseMoon" width={123} height={94}  />
             </>
           ) : (
-            <Image src={baseBunny} alt="baseBunny" width={196} height={182} placeholder="blur" />
+            <Image src={baseBunny} alt="baseBunny" width={196} height={182}  />
           )}
           <BgWrapper>
             {isDesktop ? (
               <>
-                <Image src={baseBg} alt="baseBg" width={624} height={192} placeholder="blur" />
-                <Image src={baseTree} alt="baseTree" width={149} height={150} placeholder="blur" />
+                <Image src={baseBg} alt="baseBg" width={624} height={192}  />
+                <Image src={baseTree} alt="baseTree" width={149} height={150}  />
               </>
             ) : (
-              <Image src={baseBgMobile} alt="baseBgMobile" width={316} height={176} placeholder="blur" />
+              <Image src={baseBgMobile} alt="baseBgMobile" width={316} height={176}  />
             )}
           </BgWrapper>
         </RightWrapper>

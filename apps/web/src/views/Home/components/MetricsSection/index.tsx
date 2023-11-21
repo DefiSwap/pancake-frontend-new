@@ -92,7 +92,7 @@ const Stats = () => {
       <ChainTags />
       <ImageLayer>
         <BnbBallRocket>
-          <Image src={bnbBallRocket} alt="bnbBallRocket" width={144} height={168} placeholder="blur" />
+          <Image src={bnbBallRocket} alt="bnbBallRocket" width={144} height={168} unoptimized />
         </BnbBallRocket>
         <EthBallRocket>
           <Image
@@ -100,7 +100,7 @@ const Stats = () => {
             alt="ethBallRocket"
             width={isXxl ? 116 : 70}
             height={isXxl ? 230 : 140}
-            placeholder="blur"
+            unoptimized
           />
         </EthBallRocket>
         <AptosBallRocket>
@@ -109,7 +109,7 @@ const Stats = () => {
             alt="aptosBallRocket"
             width={isXxl ? 84 : 53}
             height={isXxl ? 101 : 64}
-            placeholder="blur"
+            unoptimized
           />
         </AptosBallRocket>
       </ImageLayer>

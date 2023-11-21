@@ -1,14 +1,14 @@
 import { styled } from 'styled-components'
 import Image from 'next/image'
-import discord from '../../images/socials/1.png'
-import twitter from '../../images/socials/2.png'
-import telegram from '../../images/socials/3.png'
-import instagram from '../../images/socials/4.png'
-import pinkBubble from '../../images/community-items/1.png'
-import ring from '../../images/community-items/2.png'
-import heart from '../../images/community-items/3.png'
-import speaker from '../../images/community-items/4.png'
-import yellowBubble from '../../images/community-items/5.png'
+import discord from '../../../../../public/socials/1.png'
+import twitter from '../../../../../public/socials/2.png'
+import telegram from '../../../../../public/socials/3.png'
+import instagram from '../../../../../public/socials/4.png'
+import pinkBubble from '../../../../../public/community-items/1.png'
+import ring from '../../../../../public/community-items/2.png'
+import heart from '../../../../../public/community-items/3.png'
+import speaker from '../../../../../public/community-items/4.png'
+import yellowBubble from '../../../../../public/community-items/5.png'
 
 export const LeftImageWrapper = styled.div`
   display: none;

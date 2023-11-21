@@ -71,6 +71,7 @@ export const BLOCKS_CLIENT_WITH_CHAIN = {
 }
 
 export const ASSET_CDN = 'https://assets.pancakeswap.finance'
+export const ASSET_GITHUB = 'https://raw.githubusercontent.com/judithjr/assets-test/main'
 
 export const V3_SUBGRAPH_URLS = {
   [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth',

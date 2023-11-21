@@ -1,13 +1,17 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Link, OpenNewIcon, Text, useMatchBreakpoints, Button, Svg, SvgProps } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
-import { opbnbBunny, opbnbBg, opbnbBgMobile } from '../../../../../public/inside/images'
+
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
+
+const opbnbBunny = `${ASSET_GITHUB}/inside/images/PattieBar.png`
+const opbnbBg = `${ASSET_GITHUB}/inside/images/opbnb-bg.png`
+const opbnbBgMobile = `${ASSET_GITHUB}/inside/images/opbnb-bg-mobile.png`
 
 const OpBnbLogo = (props: SvgProps) => (
   <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" {...props}>
@@ -147,10 +151,10 @@ export const OpBnbBanner = memo(() => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/PattieBar.png" alt="opbnbBunny" width={172} height={200} placeholder="blur" />
+              <Image src={opbnbBunny} alt="opbnbBunny" width={172} height={200} placeholder="blur" />
             </>
           ) : (
-            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/PattieBar.png" alt="opbnbBunny" width={151} height={176} placeholder="blur" />
+            <Image src={opbnbBunny} alt="opbnbBunny" width={151} height={176} placeholder="blur" />
           )}
          
         </RightWrapper>

@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Button, Flex, NextLinkFromReactRouter, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
 import { useLayoutEffect, useRef } from 'react'
 import { styled } from 'styled-components'
@@ -164,7 +164,7 @@ const Hero = () => {
   }, [])
 
   const { drawSequenceImage, playing } = useDrawSequenceImages(
-    'https://pancake-frontend-grmf46u8o-edwinvyp.vercel.app/images/home/lunar-bunny/astronaut-pattie.webm',
+    'https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm',
     checkIsIOS() || isMobile ? 70 : 0,
     canvasRef,
     seqInternalRef,
@@ -276,7 +276,7 @@ const Hero = () => {
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>
-                  <source src="https://pancake-frontend-grmf46u8o-edwinvyp.vercel.app/images/home/lunar-bunny/astronaut-pattie.webm" type="video/webm" />
+                  <source src="https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm" type="video/webm" />
 
                   </CakeVideo>
                   <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>

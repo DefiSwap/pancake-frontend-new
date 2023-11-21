@@ -1,14 +1,19 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Link, OpenNewIcon, Text, useMatchBreakpoints, Button, Svg, SvgProps } from '@pancakeswap/uikit'
-import { ASSET_CDN } from 'config/constants/endpoints'
+import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'
 import * as S from './Styled'
-import { baseBunny, baseBgMobile, baseTree, baseBg, baseMoon } from '../../../../../public/inside/images'
 import { flyingAnim } from './animations'
 
 const pancakeSwapLogo = `${ASSET_CDN}/web/banners/ethXpancakeswap.png`
+
+const baseBunny = `${ASSET_GITHUB}/inside/images/mousefuse.png`
+const baseBgMobile = `${ASSET_GITHUB}/inside/images/base-bg-mobile.png`
+const baseTree = `${ASSET_GITHUB}/inside/images/base-tree.png`
+const baseBg = `${ASSET_GITHUB}/inside/images/base-bg.png`
+const baseMoon = `${ASSET_GITHUB}/inside/images/base-moon.png`
 
 const OpBnbLogo = (props: SvgProps) => (
   <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" fill="none" {...props}>
@@ -154,20 +159,20 @@ const BaseBanner = () => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/mousefuse.png" alt="baseBunny" width={218} height={203} placeholder="blur" />
-              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-moon.png" alt="baseMoon" width={123} height={94} placeholder="blur" />
+              <Image src={baseBunny} alt="baseBunny" width={218} height={203} placeholder="blur" />
+              <Image src={baseMoon} alt="baseMoon" width={123} height={94} placeholder="blur" />
             </>
           ) : (
-            <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/mousefuse.png" alt="baseBunny" width={196} height={182} placeholder="blur" />
+            <Image src={baseBunny} alt="baseBunny" width={196} height={182} placeholder="blur" />
           )}
           <BgWrapper>
             {isDesktop ? (
               <>
-                <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-bg.png" alt="baseBg" width={624} height={192} placeholder="blur" />
-                <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-tree.png" alt="baseTree" width={149} height={150} placeholder="blur" />
+                <Image src={baseBg} alt="baseBg" width={624} height={192} placeholder="blur" />
+                <Image src={baseTree} alt="baseTree" width={149} height={150} placeholder="blur" />
               </>
             ) : (
-              <Image src="https://raw.githubusercontent.com/judithjr/assets-test/main/inside/images/base-bg-mobile.png" alt="baseBgMobile" width={316} height={176} placeholder="blur" />
+              <Image src={baseBgMobile} alt="baseBgMobile" width={316} height={176} placeholder="blur" />
             )}
           </BgWrapper>
         </RightWrapper>

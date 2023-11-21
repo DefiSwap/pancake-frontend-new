@@ -1,14 +1,18 @@
 import { styled } from 'styled-components'
 import Image from 'next/image'
-import discord from '../../../../../public/socials/1.png'
-import twitter from '../../../../../public/socials/2.png'
-import telegram from '../../../../../public/socials/3.png'
-import instagram from '../../../../../public/socials/4.png'
-import pinkBubble from '../../../../../public/community-items/1.png'
-import ring from '../../../../../public/community-items/2.png'
-import heart from '../../../../../public/community-items/3.png'
-import speaker from '../../../../../public/community-items/4.png'
-import yellowBubble from '../../../../../public/community-items/5.png'
+import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
+
+
+const discord = `${ASSET_GITHUB}/socials/1.png`
+const twitter = `${ASSET_GITHUB}/socials/2.png`
+const telegram = `${ASSET_GITHUB}/socials/3.png`
+const instagram = `${ASSET_GITHUB}/socials/4.png`
+
+const pinkBubble = `${ASSET_GITHUB}/community-items/1.png`
+const ring = `${ASSET_GITHUB}/community-items/2.png`
+const heart = `${ASSET_GITHUB}/community-items/3.png`
+const speaker = `${ASSET_GITHUB}/community-items/4.png`
+const yellowBubble = `${ASSET_GITHUB}/community-items/5.png`
 
 export const LeftImageWrapper = styled.div`
   display: none;
@@ -152,11 +156,11 @@ export const RightImageWrapper = styled.div`
 export const RightTopBox: React.FC = () => {
   return (
     <RightImageWrapper>
-      <Image className="pinkBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/1.png" alt="pinkBubble" />
-      <Image className="ring" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/2.png" alt="ring" />
-      <Image className="heart" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/3.png" alt="heart" />
-      <Image className="speaker" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/4.png" alt="speaker" />
-      <Image className="yellowBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/5.png" alt="yellowBubble" />
+      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
+      <Image className="ring" src={ring} alt="ring" />
+      <Image className="heart" src={heart} alt="heart" />
+      <Image className="speaker" src={speaker} alt="speaker" />
+      <Image className="yellowBubble" src={yellowBubble} alt="yellowBubble" />
     </RightImageWrapper>
   )
 }
@@ -164,8 +168,8 @@ export const RightTopBox: React.FC = () => {
 export const RightBottomBox: React.FC = () => {
   return (
     <RightShadowWrapper>
-      <Image className="pinkBubble" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/1.png" alt="pinkBubble" />
-      <Image className="ring" src="https://raw.githubusercontent.com/judithjr/assets-test/main/community-items/2.png" alt="ring" />
+      <Image className="pinkBubble" src={pinkBubble} alt="pinkBubble" />
+      <Image className="ring" src={ring} alt="ring" />
     </RightShadowWrapper>
   )
 }
@@ -173,10 +177,10 @@ export const RightBottomBox: React.FC = () => {
 export const LeftBottomBox: React.FC = () => {
   return (
     <LeftImageWrapper>
-      <Image className="discord" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/1.png" alt="discord" />
-      <Image className="twitter" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/2.png" alt="twitter" />
-      <Image className="telegram" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/3.png" alt="telegram" />
-      <Image className="instagram" src="https://raw.githubusercontent.com/judithjr/assets-test/main/socials/4.png" alt="instagram" />
+      <Image className="discord" src={discord} alt="discord" />
+      <Image className="twitter" src={twitter} alt="twitter" />
+      <Image className="telegram" src={telegram} alt="telegram" />
+      <Image className="instagram" src={instagram} alt="instagram" />
     </LeftImageWrapper>
   )
 }

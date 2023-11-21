@@ -151,10 +151,10 @@ export const OpBnbBanner = memo(() => {
         <RightWrapper>
           {isDesktop ? (
             <>
-              <Image src={opbnbBunny} alt="opbnbBunny" width={172} height={200}  />
+              <Image src={opbnbBunny} alt="opbnbBunny" width={172} height={200} unoptimized />
             </>
           ) : (
-            <Image src={opbnbBunny} alt="opbnbBunny" width={151} height={176}  />
+            <Image src={opbnbBunny} alt="opbnbBunny" width={151} height={176} unoptimized />
           )}
          
         </RightWrapper>

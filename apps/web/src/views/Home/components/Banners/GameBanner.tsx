@@ -5,7 +5,7 @@ import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled, keyframes } from 'styled-components'
 import * as S from './Styled'
-import { gameDesktopBg, gameMobileBunny, gameDesktopBunny, gameCube, gameText, gameMobileText } from '../../../../../public/inside/images'
+
 
 
 const gameDesktopBg = `${ASSET_GITHUB}/inside/images/game-desktop-bg.png`

@@ -1,6 +1,6 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Flex, Link, OpenNewIcon, Text, useMatchBreakpoints, Button, Svg, SvgProps } from '@pancakeswap/uikit'
-import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
+import { ASSET_CDN, ASSET_GITHUB } from 'config/constants/endpoints'
 import Image from 'next/legacy/image'
 import { memo } from 'react'
 import { styled } from 'styled-components'

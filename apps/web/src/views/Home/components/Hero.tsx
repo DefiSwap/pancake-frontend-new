@@ -1,7 +1,7 @@
 import { useTranslation } from '@pancakeswap/localization'
 import { Button, Flex, NextLinkFromReactRouter, Text, useMatchBreakpoints } from '@pancakeswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
-import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
+import { ASSET_CDN, ASSET_GITHUB } from 'config/constants/endpoints'
 import useTheme from 'hooks/useTheme'
 import { useLayoutEffect, useRef } from 'react'
 import { styled } from 'styled-components'

@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import Image from 'next/image'
-import { ASSET_CD, ASSET_GITHUB } from 'config/constants/endpoints'
+import { ASSET_CDN, ASSET_GITHUB } from 'config/constants/endpoints'
 
 
 const discord = `${ASSET_GITHUB}/socials/1.png`

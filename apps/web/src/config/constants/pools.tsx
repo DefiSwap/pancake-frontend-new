@@ -4,13 +4,13 @@ import { bscTokens } from '@pancakeswap/tokens'
 
 export const vaultPoolConfig = {
   [VaultKey.CakeVaultV1]: {
-    name: <Trans>Auto CAKE</Trans>,
+    name: <Trans>Auto Pattie</Trans>,
     description: <Trans>Automatic restaking</Trans>,
     autoCompoundFrequency: 5000,
     gasLimit: 380000n,
     tokenImage: {
       primarySrc: `/images/tokens/${bscTokens.cake.address}.png`,
-      secondarySrc: '/images/autorenew.svg',
+      secondarySrc: 'https://raw.githubusercontent.com/judithjr/assets-test/90e5fd3ea1b316a84d164257fd55dba7f1b9c109/images/autorenew.svg',
     },
   },
   [VaultKey.CakeVault]: {
@@ -20,7 +20,7 @@ export const vaultPoolConfig = {
     gasLimit: 1100000n,
     tokenImage: {
       primarySrc: `https://i.ibb.co/qgCjtjj/logo.png`,
-      secondarySrc: '/images/autorenew.svg',
+      secondarySrc: 'https://raw.githubusercontent.com/judithjr/assets-test/90e5fd3ea1b316a84d164257fd55dba7f1b9c109/images/autorenew.svg',
     },
   },
   [VaultKey.CakeFlexibleSideVault]: {
@@ -30,7 +30,7 @@ export const vaultPoolConfig = {
     gasLimit: 500000n,
     tokenImage: {
       primarySrc: `/images/tokens/${bscTokens.cake.address}.png`,
-      secondarySrc: '/images/autorenew.svg',
+      secondarySrc: 'https://raw.githubusercontent.com/judithjr/assets-test/90e5fd3ea1b316a84d164257fd55dba7f1b9c109/images/autorenew.svg',
     },
   },
   [VaultKey.IfoPool]: {

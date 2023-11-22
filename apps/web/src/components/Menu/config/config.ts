@@ -102,17 +102,6 @@ const config: (
           href: '/info',
         },
        
-      ].map((item) => addMenuItemSupported(item, chainId)),
-    },
-   
-   
-    {
-      label: 'Pattie Ecosystem',
-      href: '/',
-      icon: MoreIcon,
-      hideSubNav: true,
-      items: [
-      
         {
           label: t('Perpetual'),
           href: 'https://perp.pattieswap.finance/',
@@ -130,4 +119,6 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+   
+   
 export default config

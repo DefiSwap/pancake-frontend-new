@@ -89,28 +89,45 @@ const config: (
        
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
-   
-    {
-      label: t('Perpetual'),
-      href: 'https://perp.pattieswap.finance',
-      
-      
-    },
+
 
     {
-      label: t('Pattiepad'),
-      href: 'https://pattiepad.com',
-      
-      
-    },
-
-    {
-      label: t('Analytics'),
+      label: '',
       href: '/info',
-     
-      
+      icon: MoreIcon,
+      hideSubNav: true,
+      items: [
+        {
+          label: t('Info'),
+          href: '/info',
+        },
+       
+      ].map((item) => addMenuItemSupported(item, chainId)),
     },
    
-  ].map((item) => addMenuItemSupported(item, chainId))
-
+   
+    {
+      label: 'Pattie Ecosystem',
+      href: '/',
+      icon: MoreIcon,
+      hideSubNav: true,
+      items: [
+      
+        {
+          label: t('Perpetual'),
+          href: 'https://perp.pattieswap.finance/',
+          type: DropdownMenuItemType.EXTERNAL_LINK,
+        },
+        {
+          label: t('Pattiepad'),
+          href: 'https://pattiepad.com',
+          type: DropdownMenuItemType.EXTERNAL_LINK,
+        },
+        {
+          label: t('Pattie City'),
+          href: 'https://pattiecity.com',
+          type: DropdownMenuItemType.EXTERNAL_LINK,
+        },
+      ].map((item) => addMenuItemSupported(item, chainId)),
+    },
 export default config

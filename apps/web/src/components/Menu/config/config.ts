@@ -119,6 +119,7 @@ const config: (
         },
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
+  ].map((item) => addMenuItemSupported(item, chainId))
    
    
 export default config

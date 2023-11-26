@@ -227,7 +227,7 @@ const useTradeBlockData = () => {
       },
       
     ]
-  }, [t, push, perpetualUrl, onUSCitizenModalPresent, userNotUsCitizenAcknowledgement])
+  }, [t, push])
 }
 
 const useEarnBlockData = () => {
@@ -426,74 +426,7 @@ const EcoSystemSection: React.FC = () => {
           </Flex>
         </Flex>
       </CardWrapper>
-      <CardWrapper>
-        <Flex
-          style={{ gap: 32 }}
-          flexDirection={isMobile || isMd ? 'column' : 'row-reverse'}
-          alignItems={isMobile || isMd ? undefined : 'center'}
-        >
-          <Image
-            style={{ marginRight: isMobile || isMd ? 'auto' : -72, marginLeft: isMobile || isMd ? 0 : 'auto' }}
-            src={earnNftBunny}
-            alt="earnNftBunny"
-            width={296}
-            height={360}
-            placeholder="blur"
-          />
-          <Flex flexDirection="column">
-            <Title>{t('Earn')}</Title>
-            <FeatureBoxesWrapper>
-              {earnBlockData.map((item) => (
-                <FeatureBox
-                  className="type-b"
-                  key={`${item.title}Block`}
-                  title={item.title}
-                  description={item.description}
-                  image={item.image}
-                  defaultImage={item.defaultImage}
-                  width={100 / tradeBlockData.length}
-                  ctaTitle={item.ctaTitle}
-                  path={item.path}
-                />
-              ))}
-            </FeatureBoxesWrapper>
-          </Flex>
-        </Flex>
-      </CardWrapper>
-      <CardWrapper>
-        <Flex
-          style={{ gap: 32 }}
-          flexDirection={isMobile || isMd ? 'column' : 'row'}
-          alignItems={isMobile || isMd ? undefined : 'center'}
-        >
-          <Image
-            style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={gameNftBunny}
-            alt="gameNftBunny"
-            width={344}
-            height={360}
-            placeholder="blur"
-          />
-          <Flex flexDirection="column">
-            <Title>{t('Game & NFT')}</Title>
-            <FeatureBoxesWrapper>
-              {nftGameBlockData.map((item) => (
-                <FeatureBox
-                  className="type-a higher"
-                  key={`${item.title}Block`}
-                  title={item.title}
-                  description={item.description}
-                  defaultImage={item.defaultImage}
-                  image={item.image}
-                  width={100 / tradeBlockData.length}
-                  ctaTitle={item.ctaTitle}
-                  path={item.path}
-                />
-              ))}
-            </FeatureBoxesWrapper>
-          </Flex>
-        </Flex>
-      </CardWrapper>
+     
     </Flex>
   )
 }

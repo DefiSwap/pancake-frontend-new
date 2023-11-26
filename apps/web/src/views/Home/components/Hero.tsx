@@ -146,7 +146,7 @@ const Hero = () => {
         videoRef.current.play()
       }
     },
-    [starVideoRef, cakeVideoRef, rock01VideoRef, rock02VideoRef, rock03VideoRef],
+    [starVideoRef, rock01VideoRef, rock02VideoRef, rock03VideoRef],
   )
 
   useLayoutEffect(() => {
@@ -267,12 +267,25 @@ const Hero = () => {
         >
           <BunnyWrapper>
             <CakeBox>
-              <CakeCanvas
-                className={isIOS || isMobile ? 'is-ios' : undefined}
-                width={isIOS || isMobile ? 500 : width}
-                height={isIOS || isMobile ? 500 : height}
-                ref={canvasRef}
-              />
+            <VideoWrapper>
+                  <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>
+                  <source src={`${ASSET_GITHUB}/images/home/astronaut-pattie.webm`} type="video/webm" />
+
+                  </CakeVideo>
+                  <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>
+                    <source src={`${ASSET_CDN}/web/landing/star.webm`} type="video/webm" />
+                  </CakeVideo>
+                 
+                  <CakeVideo ref={rock01VideoRef} width={width} autoPlay loop muted playsInline>
+                    <source src={`${ASSET_CDN}/web/landing/rock01.webm`} type="video/webm" />
+                  </CakeVideo>
+                  <CakeVideo ref={rock02VideoRef} width={width} autoPlay loop muted playsInline>
+                    <source src={`${ASSET_CDN}/web/landing/rock02.webm`} type="video/webm" />
+                  </CakeVideo>
+                  <CakeVideo ref={rock03VideoRef} width={width} autoPlay loop muted playsInline>
+                    <source src={`${ASSET_CDN}/web/landing/rock03.webm`} type="video/webm" />
+                  </CakeVideo>
+                </VideoWrapper>
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>

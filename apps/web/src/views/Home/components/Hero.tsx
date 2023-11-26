@@ -276,7 +276,7 @@ const Hero = () => {
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>
-                  <source src="https://raw.githubusercontent.com/judithjr/assets-test/main/images/home/astronaut-pattie.webm" type="video/webm" />
+                  <source src={`${ASSET_GITHUB}/images/home/astronaut-pattie.webm`} type="video/webm" />
 
                   </CakeVideo>
                   <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>

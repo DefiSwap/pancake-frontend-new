@@ -164,7 +164,7 @@ const Hero = () => {
   }, [])
 
   const { drawSequenceImage, playing } = useDrawSequenceImages(
-    `${ASSETGITHUB}/images/home/astronaut-pattie.webm`,
+    `${ASSET_GITHUB}/images/home/astronaut-pattie.webm`,
     checkIsIOS() || isMobile ? 70 : 0,
     canvasRef,
     seqInternalRef,

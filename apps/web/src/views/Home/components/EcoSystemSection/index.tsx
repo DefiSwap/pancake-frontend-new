@@ -10,6 +10,7 @@ import { getPerpetualUrl } from 'utils/getPerpetualUrl'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import Image, { StaticImageData } from 'next/image'
 import tradeBunny from '../../images/trade-bunny.png'
+import PattieBar from './PattieBar.png'
 import earnNftBunny from '../../images/earn-bunny.png'
 import gameNftBunny from '../../images/game-nft-bunny.png'
 import tradeSwap from '../../images/trade-swap.png'
@@ -184,7 +185,7 @@ const useTradeBlockData = () => {
   return useMemo(() => {
     return [
       {
-        title: t('Swap'),
+        title: t('Trade'),
         description: t('Trade crypto instantly across multiple chains'),
         ctaTitle: t('Trade Now'),
         image: tradeSwap,
@@ -192,20 +193,29 @@ const useTradeBlockData = () => {
         path: '/swap',
       },
       {
-        title: t('Liquidity'),
-        description: t('Fund liquidity pools, earn trading fees'),
+        title: t('Earn'),
+        description: t('Earn Trading fees by providing liquidity'),
         ctaTitle: t('Add Now'),
         image: tradeLiquidity,
         defaultImage: tradeLiquidityPurple,
         path: '/liquidity',
       },
       {
-        title: t('Bridge'),
-        description: t('Seamlessly transfer assets across chains'),
-        ctaTitle: t('Bridge Now'),
+        title: t('PattieCity'),
+        description: t('PattieCity real estate Play-to-Earn Platform'),
+        ctaTitle: t('Invest Now'),
         image: tradeBridge,
         defaultImage: tradeBridgePurple,
-        path: 'https://bridge.pancakeswap.finance/',
+        path: 'https://pattiecity.com/',
+      },
+
+      {
+        title: t('PattiePad'),
+        description: t('Pattie Launchpad'),
+        ctaTitle: t('Launch Yours'),
+        image: tradeBuy,
+        defaultImage: tradeBuyPurple,
+        path: 'https://pattiepad.com',
       },
       {
         title: t('Perpetual'),
@@ -213,22 +223,9 @@ const useTradeBlockData = () => {
         ctaTitle: t('Trade Now'),
         image: tradePerpetual,
         defaultImage: tradePerpetualPurple,
-        onClick: () => {
-          if (!userNotUsCitizenAcknowledgement) {
-            onUSCitizenModalPresent()
-          } else {
-            push(perpetualUrl)
-          }
-        },
+        path: 'https://perp.pattieswap.finance/',
       },
-      {
-        title: t('Buy Crypto'),
-        description: t('Buy crypto with your preferred currency and payment method'),
-        ctaTitle: t('Buy Now'),
-        image: tradeBuy,
-        defaultImage: tradeBuyPurple,
-        path: '/buy-crypto',
-      },
+      
     ]
   }, [t, push, perpetualUrl, onUSCitizenModalPresent, userNotUsCitizenAcknowledgement])
 }
@@ -372,7 +369,7 @@ const EcoSystemSection: React.FC = () => {
 
   return (
     <Flex justifyContent="center" alignItems="center" flexDirection="column" pt={isMobile ? '24px' : '60px'}>
-      <GradientLogo height="48px" width="48px" mb="24px" />
+     
       <Text textAlign="center" p="0px 20px">
         <Text
           fontSize={['32px', null, null, '40px']}
@@ -402,8 +399,8 @@ const EcoSystemSection: React.FC = () => {
         >
           <Image
             style={{ marginLeft: isMobile ? -32 : -72 }}
-            src={tradeBunny}
-            alt="tradeBunny"
+            src={PattieBar}
+            alt="pattiebar"
             width={340}
             height={340}
             placeholder="blur"

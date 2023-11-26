@@ -178,7 +178,7 @@ const Hero = () => {
       }
     },
     true,
-  )
+  );
   
 
   return (

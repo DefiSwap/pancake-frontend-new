@@ -41,7 +41,7 @@ const SpeechBubble = styled.div`
   }
 `
 
-const domain = 'https://pattieswap.com'
+const domain = 'https://pattieswap.finance'
 
 const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { t } = useTranslation()
@@ -49,7 +49,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
   const { isMobile, isMd } = useMatchBreakpoints()
   const warningTextAsParts = useMemo(() => {
     const warningText = t("please make sure you're visiting %domain% - check the URL carefully.", { domain })
-    return warningText.split(/(https:\/\/pattieswap.com)/g)
+    return warningText.split(/(https:\/\/pattieswap.finance)/g)
   }, [t])
   const warningTextComponent = (
     <>
@@ -63,7 +63,7 @@ const PhishingWarningBanner: React.FC<React.PropsWithChildren> = () => {
           small
           as="span"
           bold={text === domain}
-          color={text === domain ? '#FF720D' : '#BDC2C4'}
+          color={text === domain ? '#FFFFFF' : '#BDC2C4'}
         >
           {text}
         </Text>

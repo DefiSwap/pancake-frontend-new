@@ -269,8 +269,7 @@ const Hero = () => {
             <CakeBox>
             <video
       className={isIOS || isMobile ? 'is-ios' : undefined}
-      width={isIOS || isMobile ? 500 : width}
-      height={isIOS || isMobile ? 500 : height}
+      style={{ maxWidth: '100%' }}
       autoPlay
       muted
       playsInline

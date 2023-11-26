@@ -106,7 +106,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
             <WedgeTopLeft />
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
-       
+        <EcoSystemSection />
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -123,7 +123,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         
-       
+        <EcoSystemSection />
         
         <OuterWedgeWrapper>
           <InnerWedgeWrapper id="bottom-wedge4-2">

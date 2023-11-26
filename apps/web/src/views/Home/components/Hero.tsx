@@ -267,25 +267,16 @@ const Hero = () => {
         >
           <BunnyWrapper>
             <CakeBox>
-            <VideoWrapper>
-                  <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>
-                  <source src={`${ASSET_GITHUB}/images/home/astronaut-pattie.webm`} type="video/webm" />
-
-                  </CakeVideo>
-                  <CakeVideo ref={starVideoRef} width={width} autoPlay loop muted playsInline>
-                    <source src={`${ASSET_CDN}/web/landing/star.webm`} type="video/webm" />
-                  </CakeVideo>
-                 
-                  <CakeVideo ref={rock01VideoRef} width={width} autoPlay loop muted playsInline>
-                    <source src={`${ASSET_CDN}/web/landing/rock01.webm`} type="video/webm" />
-                  </CakeVideo>
-                  <CakeVideo ref={rock02VideoRef} width={width} autoPlay loop muted playsInline>
-                    <source src={`${ASSET_CDN}/web/landing/rock02.webm`} type="video/webm" />
-                  </CakeVideo>
-                  <CakeVideo ref={rock03VideoRef} width={width} autoPlay loop muted playsInline>
-                    <source src={`${ASSET_CDN}/web/landing/rock03.webm`} type="video/webm" />
-                  </CakeVideo>
-                </VideoWrapper>
+            <video
+      className={isIOS || isMobile ? 'is-ios' : undefined}
+      width={isIOS || isMobile ? 500 : width}
+      height={isIOS || isMobile ? 500 : height}
+      autoPlay
+      muted
+      playsInline
+    >
+      <source src={`${ASSET_GITHUB}/images/home/astronaut-pattie.webm`} type="video/webm" />
+    </video>
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>

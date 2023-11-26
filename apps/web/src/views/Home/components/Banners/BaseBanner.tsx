@@ -141,7 +141,7 @@ const BaseBanner = () => {
             <Divider />
             <OpBnbLogo width={33} height={33} />
           </Flex>
-          <Header>{isMobile ? t('Base is LIVE!') : t('PattiePad Is Live')}</Header>
+          <Header>{isMobile ? t('PattiePad is LIVE!') : t('PattiePad Is Live')}</Header>
           {!isMobile && <SubTitle>{t('Launch Your Project Tokens on Pattie Launchpad')}</SubTitle>}
           <Link
             style={{ textDecoration: 'none' }}

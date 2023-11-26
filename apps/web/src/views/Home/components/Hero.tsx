@@ -268,7 +268,7 @@ const Hero = () => {
           <BunnyWrapper>
             <CakeBox>
               <CakeCanvas
-                className={isIOS || isMobile ? 'is-ios' : 'is-ios'}
+                className={isIOS || isMobile ? 'is-ios' : undefined}
                 width={isIOS || isMobile ? 500 : width}
                 height={isIOS || isMobile ? 500 : height}
                 ref={canvasRef}

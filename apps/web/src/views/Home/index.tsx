@@ -123,7 +123,6 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         
-        <EcoSystemSection />
         
         <OuterWedgeWrapper>
           <InnerWedgeWrapper id="bottom-wedge4-2">

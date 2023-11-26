@@ -267,15 +267,12 @@ const Hero = () => {
         >
           <BunnyWrapper>
             <CakeBox>
-            <video
-      className={isIOS || isMobile ? 'is-ios' : undefined}
-      style={{ maxWidth: '100%' }}
-      autoPlay
-      muted
-      playsInline
-    >
-      <source src={`${ASSET_GITHUB}/images/home/astronaut-pattie.webm`} type="video/webm" />
-    </video>
+              <CakeCanvas
+                className={isIOS || isMobile ? 'is-ios' : 'is-ios'}
+                width={isIOS || isMobile ? 500 : width}
+                height={isIOS || isMobile ? 500 : height}
+                ref={canvasRef}
+              />
               {!(isIOS || isMobile) && (
                 <VideoWrapper>
                   <CakeVideo ref={videoRef} width={width} autoPlay muted playsInline>

@@ -405,7 +405,25 @@ const EcoSystemSection: React.FC = () => {
             height={340}
             placeholder="blur"
           />
-        
+         <Flex flexDirection="column">
+            <Title>{t('Trade')}</Title>
+            <FeatureBoxesWrapper>
+              {tradeBlockData.map((item) => (
+                <FeatureBox
+                  key={`${item.title}Block`}
+                  className="type-a"
+                  title={item.title}
+                  description={item.description}
+                  defaultImage={item.defaultImage}
+                  image={item.image}
+                  width={100 / tradeBlockData.length}
+                  ctaTitle={item.ctaTitle}
+                  path={item.path}
+                  
+                />
+              ))}
+            </FeatureBoxesWrapper>
+          </Flex>
         </Flex>
       </CardWrapper>
      

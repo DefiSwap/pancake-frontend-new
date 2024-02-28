@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "preinstall": "npm rebuild"
     "analyze": "ANALYZE=true pnpm build",
     "dev": "next dev",
     "build": "next info && node --max-old-space-size=4096 ./node_modules/next/dist/bin/next build --debug",
